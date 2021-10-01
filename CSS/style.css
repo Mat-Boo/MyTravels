@@ -1,5 +1,8 @@
 .navbar {
   font-family: "Cabin", sans-serif;
+  width: 100vw;
+  position: fixed;
+  height: 40px;
 }
 
 .navbar > .container-fluid .collapse > .navbar-nav > .nav-item .active {
@@ -13,7 +16,6 @@
 
 #destinations:hover .destinations-menu {
   display: block;
-  /* animation: 2s ease-in 1s infinite alternate fadein; */
 }
 
 .destinations-menu {
@@ -29,37 +31,136 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 90vw;
+  height: 100%;
   border-top: #0073cc solid 3px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.6);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 
 .map-continent {
-  width: 7%;
-  margin: 1%;
+  width: 17%;
+  height: 100%;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /*     position: relative; */
+}
+
+.map-continent:hover {
+  background: rgba(0, 115, 204, 0.5);
+  border-radius: 10px;
+}
+
+.map-continent:hover .map {
+  color: white;
+}
+
+.map-continent:hover .continent-name {
+  color: white;
 }
 
 .continent-name {
   color: #0073cc;
   text-align: center;
+  margin-top: 10px;
   margin-bottom: 20px;
   font-family: "Cabin", sans-serif;
   font-weight: 400;
 }
 
+.map {
+  color: #0073cc;
+}
+
+.africa {
+  position: relative;
+}
+
+.africa:hover .africa-countries {
+  display: block;
+}
+
+.north-america {
+  position: relative;
+}
+
+.north-america:hover .north-america-countries {
+  display: block;
+}
+
+.south-america {
+  position: relative;
+}
+
+.south-america:hover .south-america-countries {
+  display: block;
+}
+
+.asia {
+  position: relative;
+}
+
+.asia:hover .asia-countries {
+  display: block;
+}
+
+.europe {
+  position: relative;
+}
+
+.europe:hover .europe-countries {
+  display: block;
+}
+
+.oceania {
+  position: relative;
+}
+
+.oceania:hover .oceania-countries {
+  display: block;
+}
+
+.countries {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  border-top: #0073cc solid 3px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.countries-list {
+  list-style: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.countries-list a {
+  text-decoration: none;
+  color: #0073cc;
+  margin: 10px;
+}
+
+.countries-list a:hover {
+  font-weight: bold;
+  color: #005699;
+}
+
+.flag {
+  width: 8%;
+  margin-right: 8px;
+  border-radius: 4px;
+}
+
 .test-img {
   width: 100vw;
 }
-
-/* @keyframes fadein {
-    from {
-        display: none;
-        height: 0;
-    }
-    to {
-        display: block;
-        height: 500px;
-    }
-} */
 /*# sourceMappingURL=style.css.map */

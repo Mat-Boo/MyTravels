@@ -4,6 +4,9 @@ $font-menu: 'Cabin', sans-serif;
 
 .navbar {
     font-family: $font-menu;
+    width: 100vw;
+    position: fixed;
+    height: 40px;
 }
 
 .navbar > .container-fluid  .collapse > .navbar-nav > .nav-item .active {
@@ -17,7 +20,6 @@ $font-menu: 'Cabin', sans-serif;
 
 #destinations:hover .destinations-menu {
     display: block;
-    /* animation: 2s ease-in 1s infinite alternate fadein; */
 }
 
 .destinations-menu {
@@ -30,36 +32,119 @@ $font-menu: 'Cabin', sans-serif;
     display: flex;
     justify-content: space-around;
     width: 90vw;
+    height: 100%;
     border-top: $main-color solid 3px;
-    background-color: rgba($color: white, $alpha: 0.5);
+    background-color: rgba($color: white, $alpha: 0.6);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
 .map-continent {
-    width: 7%;
-    margin: 1%;
+    width: 17%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+/*     position: relative; */
+    &:hover {
+        background: rgba($color: $main-color, $alpha: 0.5);
+        border-radius: 10px;
+    }
+    &:hover .map {
+        color: white;
+    }
+    &:hover .continent-name {
+        color: white;
+    }
 }
 
 .continent-name {
     color: $main-color;
     text-align: center;
+    margin-top: 10px;
     margin-bottom: 20px;
     font-family: $font-menu;
     font-weight: 400;
 }
 
+.map {
+    color: $main-color;
+}
+
+.africa {
+    position: relative;
+    &:hover .africa-countries {
+        display: block;
+    }
+}
+
+.north-america {
+    position: relative;
+    &:hover .north-america-countries {
+        display: block;
+    }
+}
+
+.south-america {
+    position: relative;
+    &:hover .south-america-countries {
+        display: block;
+    }
+}
+
+.asia {
+    position: relative;
+    &:hover .asia-countries {
+        display: block;
+    }
+}
+
+.europe {
+    position: relative;
+    &:hover .europe-countries {
+        display: block;
+    }
+}
+
+.oceania {
+    position: relative;
+    &:hover .oceania-countries {
+        display: block;
+    }
+}
+
+.countries {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    border-top: $main-color solid 3px;
+    background-color: rgba($color: white, $alpha: 0.6);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.countries-list {
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    & a {
+        text-decoration: none;
+        color: $main-color;
+        margin: 10px;
+        &:hover {
+            font-weight: bold;
+            color: darken($color: $main-color, $amount: 10);
+        }
+    }
+}
+
+.flag {
+    width: 8%;
+    margin-right: 8px;
+    border-radius: 4px;
+}
+
 .test-img {
     width: 100vw;
 }
-
-/* @keyframes fadein {
-    from {
-        display: none;
-        height: 0;
-    }
-    to {
-        display: block;
-        height: 500px;
-    }
-} */
