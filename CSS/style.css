@@ -4,6 +4,7 @@
   width: 100vw;
   position: fixed;
   height: 40px;
+  z-index: 2;
 }
 
 .navbar > .container-fluid .collapse > .navbar-nav > .nav-item .active {
@@ -193,7 +194,44 @@
   border-radius: 4px;
 }
 
-.test-img {
-  width: 100vw;
+/* .test-img {
+    width: 100vw;
+} */
+#carouselExampleCaptions {
+  position: relative;
+  top: 40px;
+}
+
+#carouselExampleCaptions .carousel-inner .carousel-caption h5, #carouselExampleCaptions .carousel-inner .carousel-caption p {
+  text-shadow: 2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, -2px 0 0 black,  2px 2px 0 black, 2px -2px 0 black, -2px 2px 0 black, -2px -2px 0 black;
+  /*         font-family: sans-serif; */
+}
+
+#carouselExampleCaptions .carousel-inner .carousel-caption h5 {
+  font-size: 4em;
+}
+
+#carouselExampleCaptions .carousel-inner .carousel-caption p {
+  font-size: 1.5em;
+}
+
+.discover-button {
+  text-decoration: none;
+  color: white;
+  padding: 0.4em;
+  background: rgba(0, 115, 204, 0.7);
+  border-radius: 10px;
+  font-size: 1.5em;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.discover-button:hover {
+  background: rgba(255, 255, 255, 0.7);
+  color: #0073cc;
+}
+
+.carousel-item {
+  margin-bottom: 10px;
 }
 /*# sourceMappingURL=style.css.map */
