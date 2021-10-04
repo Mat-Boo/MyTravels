@@ -1,3 +1,4 @@
+/* Main navbar */
 .navbar {
   font-family: "Cabin", sans-serif;
   width: 100vw;
@@ -14,6 +15,7 @@
   color: #737373;
 }
 
+/* Big menu for Destinations Menu */
 #destinations:hover .destinations-menu {
   display: block;
 }
@@ -49,12 +51,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  /*     position: relative; */
 }
 
 .map-continent:hover {
-  background: rgba(0, 115, 204, 0.5);
-  border-radius: 10px;
+  background: #005699;
 }
 
 .map-continent:hover .map {
@@ -130,32 +130,65 @@
   display: none;
   position: absolute;
   top: 100%;
-  width: 100%;
-  border-top: #0073cc solid 3px;
-  background-color: rgba(255, 255, 255, 0.6);
+  width: 600%;
+  background: #005699;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 
+.africa-countries {
+  left: 0;
+}
+
+.north-america-countries {
+  left: -100%;
+}
+
+.south-america-countries {
+  left: -200%;
+}
+
+.asia-countries {
+  left: -300%;
+}
+
+.europe-countries {
+  left: -400%;
+}
+
+.oceania-countries {
+  left: -500%;
+}
+
 .countries-list {
   list-style: none;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.countries-list li {
+  margin: 10px;
 }
 
 .countries-list a {
   text-decoration: none;
-  color: #0073cc;
-  margin: 10px;
+  color: white;
+  padding: 0.5em;
 }
 
 .countries-list a:hover {
-  font-weight: bold;
   color: #005699;
+  background: white;
+  border-radius: 10px;
 }
 
 .flag {
-  width: 8%;
+  width: 30px;
+  height: 20px;
   margin-right: 8px;
   border-radius: 4px;
 }
