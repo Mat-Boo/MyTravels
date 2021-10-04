@@ -20,7 +20,7 @@ $font-menu: 'Cabin', sans-serif;
     color: $text-menu-color;
 }
 
-/* Big menu for Destinations Menu */
+/* Displayable block DESTINATIONS hover (Big menu for Destinations Menu) */
 #destinations:hover .destinations-menu {
     display: block;
 }
@@ -175,18 +175,15 @@ $font-menu: 'Cabin', sans-serif;
     margin-right: 8px;
     border-radius: 4px;
 }
+/* END of displayable block DESTINATIONS hover (Big menu for Destinations Menu) */
 
-/* .test-img {
-    width: 100vw;
-} */
-
+/* Bootstrap carousel */
 #carouselExampleCaptions {
     position: relative;
     top: 40px;
     .carousel-inner .carousel-caption h5, .carousel-inner .carousel-caption p {
         text-shadow: 2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, -2px 0 0 black, 
         2px 2px 0 black, 2px -2px 0 black, -2px 2px 0 black, -2px -2px 0 black;
-/*         font-family: sans-serif; */
     }
     .carousel-inner .carousel-caption h5 {
         font-size: 4em;
@@ -211,7 +208,11 @@ $font-menu: 'Cabin', sans-serif;
     }
 }
 
-.carousel-item {
-    margin-bottom: 10px;
+.carousel-inner {
+    box-shadow: 0 10px 10px grey;
 }
 
+.carousel-indicators {
+    bottom: -15px;
+}
+/* End of Bootstrap carousel */

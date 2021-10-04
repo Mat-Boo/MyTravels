@@ -16,7 +16,7 @@
   color: #737373;
 }
 
-/* Big menu for Destinations Menu */
+/* Displayable block DESTINATIONS hover (Big menu for Destinations Menu) */
 #destinations:hover .destinations-menu {
   display: block;
 }
@@ -194,9 +194,8 @@
   border-radius: 4px;
 }
 
-/* .test-img {
-    width: 100vw;
-} */
+/* END of displayable block DESTINATIONS hover (Big menu for Destinations Menu) */
+/* Bootstrap carousel */
 #carouselExampleCaptions {
   position: relative;
   top: 40px;
@@ -204,7 +203,6 @@
 
 #carouselExampleCaptions .carousel-inner .carousel-caption h5, #carouselExampleCaptions .carousel-inner .carousel-caption p {
   text-shadow: 2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, -2px 0 0 black,  2px 2px 0 black, 2px -2px 0 black, -2px 2px 0 black, -2px -2px 0 black;
-  /*         font-family: sans-serif; */
 }
 
 #carouselExampleCaptions .carousel-inner .carousel-caption h5 {
@@ -231,7 +229,14 @@
   color: #0073cc;
 }
 
-.carousel-item {
-  margin-bottom: 10px;
+.carousel-inner {
+  -webkit-box-shadow: 0 10px 10px grey;
+          box-shadow: 0 10px 10px grey;
 }
+
+.carousel-indicators {
+  bottom: -15px;
+}
+
+/* End of Bootstrap carousel */
 /*# sourceMappingURL=style.css.map */
