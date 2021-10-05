@@ -38,8 +38,8 @@ $font-menu: 'Cabin', sans-serif;
     height: 100%;
     border-top: $main-color solid 3px;
     background-color: rgba($color: white, $alpha: 0.6);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+/*     border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; */
 }
 
 .map-continent {
@@ -176,6 +176,156 @@ $font-menu: 'Cabin', sans-serif;
     border-radius: 4px;
 }
 /* END of displayable block DESTINATIONS hover (Big menu for Destinations Menu) */
+
+/* Displayable block RESSOURCES hover (Big menu for Ressources Menu) */
+#ressources:hover .ressources-menu {
+    display: block;
+}
+
+.ressources-menu {
+    display: none;
+    position: fixed;
+    left: 25vw;
+}
+
+.ressources-menu-content {
+    display: flex;
+    justify-content: space-around;
+    width: 50vw;
+    height: 100%;
+    border-top: $main-color solid 3px;
+    background-color: rgba($color: white, $alpha: 0.6);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.logo-ressource {
+    width: 20%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    &:hover {
+        background: darken($color: $main-color, $amount: 10);
+    }
+    &:hover .svg-ressource {
+        color: white;
+    }
+    &:hover .ressource-name {
+        color: white;
+    }
+}
+
+.ressource-name {
+    color: $main-color;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: $font-menu;
+    font-weight: 400;
+}
+
+.svg-ressource {
+    color: $main-color;
+    width: 25%;
+
+}
+
+.camera {
+    position: relative;
+    &:hover .africa-countries {
+        display: block;
+    }
+}
+
+.application {
+    position: relative;
+    &:hover .north-america-countries {
+        display: block;
+    }
+}
+
+.laptop {
+    position: relative;
+    &:hover .south-america-countries {
+        display: block;
+    }
+}
+
+.backpack {
+    position: relative;
+    &:hover .asia-countries {
+        display: block;
+    }
+}
+
+.passport {
+    position: relative;
+    &:hover .europe-countries {
+        display: block;
+    }
+}
+
+.ressources-items {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 600%;
+    background: darken($color: $main-color, $amount: 10);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.camera-items {
+    left: 0;
+}
+
+.application-items {
+    left: -100%;
+}
+
+.laptop-items {
+    left: -200%;
+}
+
+.backpack-items {
+    left: -300%;
+}
+
+.passport-items {
+    left: -400%;
+}
+
+.ressources-items-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    li {
+        margin: 10px;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+        padding: 0.5em;
+        &:hover {
+            color: darken($color: $main-color, $amount: 10);
+            background: white;
+            border-radius: 10px;
+        }
+    }
+}
+
+.flag {
+    width: 30px;
+    height: 20px;
+    margin-right: 8px;
+    border-radius: 4px;
+}
+/* END of displayable block RESSOURCES hover (Big menu for Ressources Menu) */
+
+
 
 /* Bootstrap carousel */
 #carouselExampleCaptions {
