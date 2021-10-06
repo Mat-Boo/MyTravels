@@ -4,8 +4,47 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-rows: repeat(3, 1fr); */
+    grid-template-areas: 
+    "header header header header"
+    "aside-left main main aside-right"
+    "footer footer footer footer";
+}
+
 header {
+    grid-area: header;
     position: relative;
+}
+
+.head-picture {
+    position: relative;
+    top: 40px;
+    width: 100vw;
+    box-shadow: 0 10px 10px grey;
+}
+
+aside-left {
+    grid-area: aside-left;
+}
+
+main {
+    grid-area: main;
+}
+
+aside-right {
+    grid-area: aside-right;
+}
+
+aside-left, aside-right {
+    position: relative;
+    top: 10px;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 h1 {

@@ -37,8 +37,6 @@
   height: 100%;
   border-top: #0073cc solid 3px;
   background-color: rgba(255, 255, 255, 0.6);
-  /*     border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px; */
 }
 
 .map-continent {
@@ -363,24 +361,6 @@
 }
 
 /* END of displayable block RESSOURCES hover (Big menu for Ressources Menu) */
-/* Bootstrap carousel */
-#carouselExampleCaptions {
-  position: relative;
-  top: 40px;
-}
-
-#carouselExampleCaptions .carousel-inner .carousel-caption h5, #carouselExampleCaptions .carousel-inner .carousel-caption p {
-  text-shadow: 2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, -2px 0 0 black,  2px 2px 0 black, 2px -2px 0 black, -2px 2px 0 black, -2px -2px 0 black;
-}
-
-#carouselExampleCaptions .carousel-inner .carousel-caption h5 {
-  font-size: 4em;
-}
-
-#carouselExampleCaptions .carousel-inner .carousel-caption p {
-  font-size: 1.5em;
-}
-
 .discover-button {
   text-decoration: none;
   color: white;
@@ -396,95 +376,4 @@
   background: rgba(255, 255, 255, 0.7);
   color: #0073cc;
 }
-
-.carousel-inner {
-  -webkit-box-shadow: 0 10px 10px grey;
-          box-shadow: 0 10px 10px grey;
-}
-
-.carousel-indicators {
-  bottom: -15px;
-}
-
-/* End of Bootstrap carousel */
-/* Page a-propos.html */
-.wrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  /* grid-template-rows: repeat(3, 1fr); */
-      grid-template-areas: "header header header header" "aside-left main main aside-right" "footer footer footer footer";
-}
-
-header {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-area: header;
-}
-
-.head-picture {
-  position: relative;
-  top: 40px;
-  width: 100vw;
-  -webkit-box-shadow: 0 10px 10px grey;
-          box-shadow: 0 10px 10px grey;
-}
-
-aside-left {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: aside-left;
-}
-
-main {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-area: main;
-}
-
-.presentation, .why-website {
-  position: relative;
-  top: 10px;
-  margin-top: 70px;
-  text-align: justify;
-  background: rgba(0, 115, 204, 0.2);
-  padding: 2%;
-  border-radius: 10px;
-}
-
-.others-blogs-logo {
-  width: 20%;
-  background: white;
-  border-radius: 10px;
-  padding: 2%;
-}
-
-aside-right {
-  -ms-grid-row: 2;
-  -ms-grid-column: 4;
-  grid-area: aside-right;
-}
-
-aside-left, aside-right {
-  position: relative;
-  top: 10px;
-  margin-top: 70px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-}
-
-.aside-picture {
-  margin: 1%;
-  border-radius: 10px;
-}
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=structure-style.css.map */
