@@ -64,7 +64,6 @@ h1 {
   font-size: 3vw;
   color: white;
   text-align: center;
-  /* background: darken($color: $main-color, $amount: 10); */
   background: rgba(0, 115, 204, 0.7);
   width: 75vw;
   margin-left: auto;
