@@ -1,3 +1,69 @@
+body {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header" "main" "footer";
+}
+
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+}
+
+main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: main;
+  font-family: 'Raleway', sans-serif;
+}
+
+footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  background: #005699;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  padding: 25px;
+  margin-top: 40px;
+}
+
+.footer-mytravels-link {
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+}
+
+.footer-mytravels-link:hover {
+  color: #005699;
+  background: white;
+}
+
+.mentions {
+  text-decoration: none;
+  color: #005699;
+  background: white;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #005699;
+}
+
+.mentions:hover {
+  border: 1px solid white;
+  color: white;
+  background: #005699;
+}
+
+.social {
+  margin: 10px;
+}
+
+.social-item {
+  margin: 10px;
+  width: 25px;
+  color: white;
+}
+
 /* Main navbar */
 .navbar {
   font-family: "Cabin", sans-serif;
