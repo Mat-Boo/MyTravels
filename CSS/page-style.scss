@@ -31,6 +31,7 @@ aside-left {
 
 main {
     grid-area: main;
+    margin-top: 70px;
 }
 
 aside-right {
@@ -39,11 +40,11 @@ aside-right {
 
 aside-left, aside-right {
     position: relative;
-    top: 10px;
     margin-top: 70px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    align-items: center;
 }
 
 h1 {
@@ -64,8 +65,6 @@ h1 {
 
 article {
     position: relative;
-    top: 40px;
-    margin-top: 50px;
 }
 
 .card {
@@ -97,13 +96,4 @@ h5 {
     &:hover {
         border: 1px solid rgba($color: $main-color, $alpha: 0.7);
     }
-}
-
-.social-insta {
-    grid-area: social;
-    position: relative;
-    top: 40px;
-    margin-top: 50px;
-    background: rgba($color: $main-color, $alpha: 0.5);
-    padding: 50px
 }

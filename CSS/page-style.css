@@ -37,6 +37,7 @@ main {
   -ms-grid-column: 2;
   -ms-grid-column-span: 3;
   grid-area: main;
+  margin-top: 70px;
 }
 
 aside-right {
@@ -47,7 +48,6 @@ aside-right {
 
 aside-left, aside-right {
   position: relative;
-  top: 10px;
   margin-top: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -58,6 +58,9 @@ aside-left, aside-right {
           flex-direction: column;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 h1 {
@@ -79,8 +82,6 @@ h1 {
 
 article {
   position: relative;
-  top: 40px;
-  margin-top: 50px;
 }
 
 .card {
@@ -115,16 +116,4 @@ h5 {
 .discover-button:hover {
   border: 1px solid rgba(0, 115, 204, 0.7);
 }
-
-.social-insta {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 5;
-  grid-area: social;
-  position: relative;
-  top: 40px;
-  margin-top: 50px;
-  background: rgba(0, 115, 204, 0.5);
-  padding: 50px;
-}
-/*# sourceMappingURL=article-style.css.map */
+/*# sourceMappingURL=page-style.css.map */
