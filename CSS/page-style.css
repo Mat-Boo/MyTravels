@@ -21,7 +21,7 @@ header {
 .head-picture {
   position: relative;
   top: 40px;
-  width: 100vw;
+  width: 100%;
   -webkit-box-shadow: 0 10px 10px grey;
           box-shadow: 0 10px 10px grey;
 }
