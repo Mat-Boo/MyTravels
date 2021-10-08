@@ -2,17 +2,17 @@ $main-color: #0073cc;
 
 /* Bootstrap carousel */
 #carouselExampleCaptions {
-    position: relative;
-    top: 40px;
     .carousel-inner .carousel-caption h5, .carousel-inner .carousel-caption p {
         text-shadow: 2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, -2px 0 0 black, 
         2px 2px 0 black, 2px -2px 0 black, -2px 2px 0 black, -2px -2px 0 black;
     }
     .carousel-inner .carousel-caption h5 {
-        font-size: 4em;
+        font-size: 3vw;
+        position: relative;
+
     }
     .carousel-inner .carousel-caption p {
-        font-size: 1.5em;
+        font-size: 1.125vw;
     }
 }
 
@@ -22,18 +22,18 @@ $main-color: #0073cc;
 
 .carousel-indicators {
     bottom: -15px;
+    z-index: 1;
 }
 /* End of Bootstrap carousel */
 
 .social-insta {
     grid-area: social;
-    position: relative;
-    top: 40px;
     margin-top: 50px;
     margin-left: 12.5%;
     width: 75%;
 }
 
+/* Bypass block to hide the elfsight pub of widget */
 .white-block {
     width: 100%;
     height: 50px;

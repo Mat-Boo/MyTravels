@@ -1,5 +1,4 @@
 .presentation, .why-website {
-  position: relative;
   text-align: justify;
   background: rgba(0, 115, 204, 0.2);
   padding: 2%;
@@ -24,5 +23,27 @@
   margin-bottom: 1%;
   border-radius: 10px;
   width: 97%;
+}
+
+.last-aside-picture {
+  margin-bottom: 0;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=a-propos-style.css.map */

@@ -20,8 +20,8 @@
 <body>
   <header>
     <!-- Main navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-      <div class="container-fluid row justify-content-center">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+      <div class="container-fluid row">
         <a class="navbar-brand col col-lg-2" href="index.html">My Travels</a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
@@ -37,7 +37,7 @@
             </li>
             <li class="nav-item dropdown" id="destinations">
               <a class="nav-link dropdown-toggle" href="#" role="button" 
-              data-bs-toggle="dropdown" aria-expanded="false">Destinations</a>
+              aria-expanded="false">Destinations</a>
 
               <!-- displayable block DESTINATIONS hover (Big menu for Destinations Menu) -->
               <div class="destinations-menu">
@@ -1437,12 +1437,12 @@
                         <li><a href="destinations/chine.html">
                           <img class="flag" src="ressources/flags/cn.svg" alt="china-flag">
                           Chine</a></li>
-                        <li><a href="destinations/indonesie.html">
-                          <img class="flag" src="ressources/flags/id.svg" alt="indonesia-flag">
-                          Indonésie</a></li>
                         <li><a href="destinations/inde.html">
                           <img class="flag" src="ressources/flags/in.svg" alt="india-flag">
                           Inde</a></li>
+                        <li><a href="destinations/indonesie.html">
+                          <img class="flag" src="ressources/flags/id.svg" alt="indonesia-flag">
+                          Indonésie</a></li>
                         <li><a href="destinations/jordanie.html">
                           <img class="flag" src="ressources/flags/jo.svg" alt="jordan-flag">
                           Jordanie</a></li>
@@ -2068,27 +2068,27 @@
                         <li><a href="destinations/finlande.html">
                           <img class="flag" src="ressources/flags/fi.svg" alt="finland-flag">
                           Finlande</a></li>
+                        <li><a href="destinations/france.html">
+                          <img class="flag" src="ressources/flags/fr.svg" alt="france-flag">
+                          France</a></li>
                         <li><a href="destinations/grece.html">
                           <img class="flag" src="ressources/flags/gr.svg" alt="greece-flag">
                           Grèce</a></li>
                         <li><a href="destinations/hongrie.html">
                           <img class="flag" src="ressources/flags/hu.svg" alt="hungria-flag">
                           Hongrie</a></li>
-                        <li><a href="destinations/france.html">
-                          <img class="flag" src="ressources/flags/fr.svg" alt="france-flag">
-                          France</a></li>
                         <li><a href="destinations/irlande.html">
                           <img class="flag" src="ressources/flags/ie.svg" alt="ireland-flag">
                           Irlande</a></li>
                         <li><a href="destinations/irlande-nord.html">
                           <img class="flag" src="ressources/flags/gb-nir.svg" alt="north-ireland-flag">
                           Irlande du Nord</a></li>
-                        <li><a href="destinations/italie.html">
-                          <img class="flag" src="ressources/flags/it.svg" alt="italia-flag">
-                          Italie</a></li>
                         <li><a href="destinations/islande.html">
                           <img class="flag" src="ressources/flags/is.svg" alt="iceland-flag">
                           Islande</a></li>
+                        <li><a href="destinations/italie.html">
+                          <img class="flag" src="ressources/flags/it.svg" alt="italia-flag">
+                          Italie</a></li>
                         <li><a href="destinations/malte.html">
                           <img class="flag" src="ressources/flags/mt.svg" alt="malta-flag">
                           Malte</a></li>
@@ -2664,9 +2664,9 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="ressources/photos/home-carousel/01-portugal-algarve.jpg" class="d-block w-100" alt="portugal-algarve">
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption">
             <h5>Portugal</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et malesuada fames ac turpis egestas sed tempus. Porta nibh venenatis cras sed felis. Velit scelerisque in dictum non consectetur.</p>
+            <p class="d-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et malesuada fames ac turpis egestas sed tempus. Porta nibh venenatis cras sed felis. Velit scelerisque in dictum non consectetur.</p>
             <a class="discover-button" href="destinations/portugal.html">
               Découvrir 
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
@@ -2677,9 +2677,9 @@
         </div>
         <div class="carousel-item">
           <img src="ressources/photos/home-carousel/02-jordan.jpg" class="d-block w-100" alt="jordan">
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption">
             <h5>Jordanie</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et malesuada fames ac turpis egestas sed tempus. Porta nibh venenatis cras sed felis. Velit scelerisque in dictum non consectetur.</p>
+            <p class="d-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et malesuada fames ac turpis egestas sed tempus. Porta nibh venenatis cras sed felis. Velit scelerisque in dictum non consectetur.</p>
             <a class="discover-button" href="destinations/jordanie.html">
               Découvrir 
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
@@ -2690,9 +2690,9 @@
         </div>
         <div class="carousel-item">
           <img src="ressources/photos/home-carousel/03-egypt.jpg" class="d-block w-100" alt="egypt">
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption">
             <h5>Egypte</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et malesuada fames ac turpis egestas sed tempus. Porta nibh venenatis cras sed felis. Velit scelerisque in dictum non consectetur.</p>
+            <p class="d-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et malesuada fames ac turpis egestas sed tempus. Porta nibh venenatis cras sed felis. Velit scelerisque in dictum non consectetur.</p>
             <a class="discover-button" href="destinations/egypte.html">
               Découvrir 
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">

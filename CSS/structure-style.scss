@@ -66,12 +66,11 @@ footer {
 .navbar {
     font-family: $font-menu;
     width: 100vw;
-    position: fixed;
-    height: 40px;
+    padding: 0;
     z-index: 2;
 }
 
-.navbar > .container-fluid  .collapse > .navbar-nav > .nav-item .active {
+.navbar > .container-fluid > .navbar-brand, .navbar > .container-fluid  .collapse > .navbar-nav > .nav-item .active {
  color: $main-color;
  font-weight: bold;
 }
@@ -80,14 +79,26 @@ footer {
     color: $text-menu-color;
 }
 
+.navbar-toggler {
+    border: none;
+    width: 40px;
+    height: 30px;
+    &:focus {
+        box-shadow: none;
+    }
+}
+
 /* Displayable block DESTINATIONS hover (Big menu for Destinations Menu) */
-#destinations:hover .destinations-menu {
-    display: block;
+@media screen and (min-width: 992px) {
+    #destinations:hover .destinations-menu {
+        display: block;
+    }
 }
 
 .destinations-menu {
     display: none;
     position: fixed;
+    top: 40px;
     left: 5vw;
 }
 
@@ -236,8 +247,10 @@ footer {
 /* END of displayable block DESTINATIONS hover (Big menu for Destinations Menu) */
 
 /* Displayable block RESSOURCES hover (Big menu for Ressources Menu) */
-#ressources:hover .ressources-menu {
-    display: block;
+@media screen and (min-width: 992px) {
+    #ressources:hover .ressources-menu {
+        display: block;
+    }
 }
 
 .ressources-menu {
@@ -395,5 +408,12 @@ footer {
     &:hover {
         background: rgba($color: white, $alpha: 0.7);
         color: $main-color
+    }
+}
+
+.carousel-caption > .discover-button {
+    font-size: 1.2vw;
+    > .bi-chevron-right {
+        width: 1.5vw;
     }
 }

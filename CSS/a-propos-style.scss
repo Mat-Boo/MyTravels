@@ -1,7 +1,6 @@
 $main-color: #0073cc;
 
 .presentation, .why-website {
-    position: relative;
     text-align: justify;
     background: rgba($color: $main-color, $alpha: 0.2);
     padding: 2%;
@@ -26,4 +25,16 @@ $main-color: #0073cc;
     margin-bottom: 1%;
     border-radius: 10px;
     width: 97%;
+}
+
+.last-aside-picture {
+    margin-bottom: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
 }
