@@ -46,4 +46,17 @@ main {
       -ms-flex-align: center;
           align-items: center;
 }
+
+.world-tour-link {
+  text-decoration: none;
+  background: #005699;
+  color: white;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.world-tour-link:hover {
+  color: #005699;
+  background: white;
+}
 /*# sourceMappingURL=a-propos-style.css.map */

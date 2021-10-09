@@ -75,7 +75,7 @@ footer {
  font-weight: bold;
 }
 
-.search {
+.bi-search {
     color: $text-menu-color;
 }
 
@@ -88,7 +88,116 @@ footer {
     }
 }
 
-/* Displayable block DESTINATIONS hover (Big menu for Destinations Menu) */
+/* displayable block DESTINATIONS hover (SMALL menu for Destinations Menu, resolution < 992px) */
+@media screen and (max-width: 991px) {
+    #destinations:hover .destinations-menu-small {
+        display: block;
+    }
+}
+
+.destinations-menu-small {
+    display: none;
+}
+
+.destinations-menu-content-small {
+    border: $main-color solid 1px;
+    border-radius: 5px;
+}
+
+.map-continent-small {
+    &:hover {
+        background: darken($color: $main-color, $amount: 10);
+    }
+    &:hover .continent-name-small {
+        color: white;
+    }
+    &:hover .countries-small {
+        border-top: 1px solid white;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+.continent-name-small {
+    color: $main-color;
+    margin-left: 20px;
+    font-family: $font-menu;
+    font-weight: 400;
+}
+
+.africa-small {
+    &:hover .africa-countries-small {
+        display: block;
+    }
+}
+
+.north-america-small {
+    &:hover .north-america-countries-small {
+        display: block;
+    }
+}
+
+.south-america-small {
+    &:hover .south-america-countries-small {
+        display: block;
+    }
+}
+
+.asia-small {
+    &:hover .asia-countries-small {
+        display: block;
+    }
+}
+
+.europe-small {
+    &:hover .europe-countries-small {
+        display: block;
+    }
+}
+
+.oceania-small {
+    &:hover .oceania-countries-small {
+        display: block;
+    }
+}
+
+.countries-small {
+    display: none;
+    background: darken($color: $main-color, $amount: 10);
+}
+
+.countries-list-small {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    li {
+        &:hover {
+            background: white;
+            border-radius: 5px;
+            a {
+                color: darken($color: $main-color, $amount: 10);
+            }
+        }
+    }
+    a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+        padding: 0.3em;
+        font-size: 0.7em;
+    }
+}
+
+.flag-small {
+    width: 22.5px;
+    height: 15px;
+    border-radius: 4px;
+}
+/* END of displayable block DESTINATIONS hover (SMALL menu for Destinations Menu, resolution < 992px) */
+
+/* displayable block DESTINATIONS hover (BIG menu for Destinations Menu, resolution >= 992px) */
 @media screen and (min-width: 992px) {
     #destinations:hover .destinations-menu {
         display: block;
@@ -244,7 +353,7 @@ footer {
     margin-right: 8px;
     border-radius: 4px;
 }
-/* END of displayable block DESTINATIONS hover (Big menu for Destinations Menu) */
+/* END of displayable block DESTINATIONS hover (BIG menu for Destinations Menu, resolution >= 992px) */
 
 /* Displayable block RESSOURCES hover (Big menu for Ressources Menu) */
 @media screen and (min-width: 992px) {
@@ -395,6 +504,129 @@ footer {
     border-radius: 4px;
 }
 /* END of displayable block RESSOURCES hover (Big menu for Ressources Menu) */
+
+/* displayable block A PROPOS hover */
+@media screen and (min-width: 992px) {
+    .apropos-menu {
+        position: absolute;
+        top: 40px;
+        width: 150px;
+        border-top: $main-color solid 3px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }  
+    .contact:hover {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .apropos-menu {
+        border: $main-color solid 1px;
+        border-radius: 5px;
+    }
+}
+
+#apropos {
+    position: relative;
+    &:hover .apropos-menu {
+        display: block;
+    }
+}
+
+.apropos-menu {
+    display: none;
+    background-color: rgba($color: white, $alpha: 0.6);
+}
+
+.apropos-menu-item {
+    &:hover {
+        background: darken($color: $main-color, $amount: 10);
+        > a {
+            color: white;
+        }
+    }
+    > a {
+        text-decoration: none;
+        color: $main-color;
+        margin-left: 20px;
+        font-family: $font-menu;
+        font-weight: 400;
+        width: 150px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+/* END of displayable block A PROPOS hover */
+
+/* Modal Window for CONTACT in A Propos Menu */
+.modal-title {
+    color: $main-color;
+}
+
+.btn-contact-send {
+    background: $main-color;
+    color: white;
+    border: 1px solid $main-color;
+    &:hover {
+        background: white;
+        color: $main-color;
+        border: 1px solid $main-color;
+    }
+}
+
+.btn-contact-cancel {
+    background: #5C636A;
+    color: white;
+    border: 1px solid #5C636A;
+    &:hover {
+        background: white;
+        color: #5C636A;
+        border: 1px solid #5C636A;
+    }
+}
+/* END of Modal Window for CONTACT in A Propos Menu */
+
+/* Modal Window for SEARCH in Main-Menu */
+
+.search-modal {
+    background: rgba($color: white, $alpha: 0.6) !important;
+}
+
+.search-modal-content {
+    margin-top: 40vh;
+}
+
+.btn-close-search {
+    position: relative;
+    left: 87vw;
+}
+
+.search-input {
+    width: 75vw;
+    position: relative;
+    left: 12.5vw;
+    font-size: 2em;
+    margin-bottom: 25px;
+}
+
+.btn-search {
+    width: 20%;
+    min-width: 200px;
+    position: relative;
+    left: 40%;
+    font-size: 2em;
+    background: $main-color;
+    color: white;
+    border: 1px solid $main-color;
+    &:hover {
+        background: white;
+        color: $main-color;
+        border: 1px solid $main-color;
+    }
+}
+/* END of Modal Window for SEARCH in Main-Menu */
 
 .discover-button {
     text-decoration: none;

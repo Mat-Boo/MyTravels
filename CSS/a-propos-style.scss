@@ -38,3 +38,15 @@ main {
     flex-wrap: nowrap;
     align-items: center;
 }
+
+.world-tour-link {
+    text-decoration: none;
+    background: darken($color: $main-color, $amount: 10);
+    color: white;
+    border-radius: 5px;
+    padding: 2px;
+    &:hover {
+        color: darken($color: $main-color, $amount: 10);
+        background: white;
+    }
+}
