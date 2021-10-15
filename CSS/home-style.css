@@ -23,20 +23,61 @@
 }
 
 /* End of Bootstrap carousel */
-.social-insta {
+.social-insta-content {
   grid-area: social;
+  background: #005699;
+}
+
+.social-insta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 50px;
   margin-left: 12.5%;
   width: 75%;
 }
 
-/* Bypass block to hide the elfsight pub of widget */
-.white-block {
-  width: 100%;
-  height: 50px;
+.social-insta p {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  color: white;
+  font-size: 2em;
+}
+
+.instagram-link {
+  text-decoration: none;
   background: white;
+  color: #005699;
+  border: #005699 1px solid;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.instagram-link:hover {
+  background: #005699;
+  color: white;
+  border: white 1px solid;
+}
+
+/* Bypass block to hide the elfsight pub of widget */
+.blue-block {
+  width: 120%;
+  height: 50px;
+  background: #005699;
   position: relative;
   bottom: 50px;
   z-index: 99999;
+  border-bottom: white 1px solid;
+}
+
+footer {
+  margin-top: 0;
 }
 /*# sourceMappingURL=home-style.css.map */

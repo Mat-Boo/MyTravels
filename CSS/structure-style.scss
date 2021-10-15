@@ -4,18 +4,45 @@ $font-menu: 'Cabin', sans-serif;
 
 body {
     display: grid;
+    grid-template-columns: repeat(5, 1fr);
     grid-template-areas: 
-    "header"
-    "main"
-    "footer";
+    "nav nav nav nav nav"
+    "header header header header header"
+    "aside-left main main main aside-right"
+    "social social social social social"
+    "footer footer footer footer footer";
+}
+
+nav {
+    grid-area: nav;
 }
 
 header {
     grid-area: header;
 }
 
+aside-left {
+    grid-area: aside-left;
+    margin-top: 40px;
+}
+
 main {
     grid-area: main;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 40px;
+}
+
+aside-right {
+    grid-area: aside-right;
+}
+
+aside-left, aside-right {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -355,156 +382,6 @@ footer {
 }
 /* END of displayable block DESTINATIONS hover (BIG menu for Destinations Menu, resolution >= 992px) */
 
-/* Displayable block RESSOURCES hover (Big menu for Ressources Menu) */
-@media screen and (min-width: 992px) {
-    #ressources:hover .ressources-menu {
-        display: block;
-    }
-}
-
-.ressources-menu {
-    display: none;
-    position: fixed;
-    left: 25vw;
-}
-
-.ressources-menu-content {
-    display: flex;
-    justify-content: space-around;
-    width: 50vw;
-    height: 100%;
-    border-top: $main-color solid 3px;
-    background-color: rgba($color: white, $alpha: 0.6);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-.logo-ressource {
-    width: 20%;
-    height: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    &:hover {
-        background: darken($color: $main-color, $amount: 10);
-    }
-    &:hover .svg-ressource {
-        color: white;
-    }
-    &:hover .ressource-name {
-        color: white;
-    }
-}
-
-.ressource-name {
-    color: $main-color;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    font-family: $font-menu;
-    font-weight: 400;
-}
-
-.svg-ressource {
-    color: $main-color;
-    width: 25%;
-
-}
-
-.camera {
-    position: relative;
-    &:hover .africa-countries {
-        display: block;
-    }
-}
-
-.application {
-    position: relative;
-    &:hover .north-america-countries {
-        display: block;
-    }
-}
-
-.laptop {
-    position: relative;
-    &:hover .south-america-countries {
-        display: block;
-    }
-}
-
-.backpack {
-    position: relative;
-    &:hover .asia-countries {
-        display: block;
-    }
-}
-
-.passport {
-    position: relative;
-    &:hover .europe-countries {
-        display: block;
-    }
-}
-
-.ressources-items {
-    display: none;
-    position: absolute;
-    top: 100%;
-    width: 600%;
-    background: darken($color: $main-color, $amount: 10);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-.camera-items {
-    left: 0;
-}
-
-.application-items {
-    left: -100%;
-}
-
-.laptop-items {
-    left: -200%;
-}
-
-.backpack-items {
-    left: -300%;
-}
-
-.passport-items {
-    left: -400%;
-}
-
-.ressources-items-list {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    margin-top: 1em;
-    margin-bottom: 1em;
-    li {
-        margin: 10px;
-    }
-    a {
-        text-decoration: none;
-        color: white;
-        padding: 0.5em;
-        &:hover {
-            color: darken($color: $main-color, $amount: 10);
-            background: white;
-            border-radius: 10px;
-        }
-    }
-}
-
-.flag {
-    width: 30px;
-    height: 20px;
-    margin-right: 8px;
-    border-radius: 4px;
-}
-/* END of displayable block RESSOURCES hover (Big menu for Ressources Menu) */
-
 /* displayable block A PROPOS hover */
 @media screen and (min-width: 992px) {
     .apropos-menu {
@@ -591,7 +468,7 @@ footer {
 /* Modal Window for SEARCH in Main-Menu */
 
 .search-modal {
-    background: rgba($color: white, $alpha: 0.6) !important;
+    background: rgba($color: white, $alpha: 0.6);
 }
 
 .search-modal-content {

@@ -47,6 +47,10 @@ main {
           align-items: center;
 }
 
+.impact-list {
+  margin-bottom: 20px;
+}
+
 .world-tour-link {
   text-decoration: none;
   background: #005699;
@@ -59,4 +63,4 @@ main {
   color: #005699;
   background: white;
 }
-/*# sourceMappingURL=a-propos-style.css.map */
+/*# sourceMappingURL=qui-suis-je-style.css.map */

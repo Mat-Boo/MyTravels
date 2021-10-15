@@ -1,33 +1,29 @@
 $main-color: #0073cc;
 
-body{
+/* body{
     font-family: 'Raleway', sans-serif;
-}
+} */
 
-.wrapper {
+/* .wrapper {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-areas: 
     "header header header header header"
-    "aside-left main main main aside-right"
+    "aside-left article article article aside-right"
     "social social social social social";
-}
+} */
 
-header {
+/* header {
     grid-area: header;
 }
 
-.head-picture {
-    width: 100%;
-    box-shadow: 0 10px 10px grey;
-}
 
 aside-left {
     grid-area: aside-left;
 }
 
-main {
-    grid-area: main;
+article {
+    grid-area: article;
     margin-top: 40px;
 }
 
@@ -42,6 +38,11 @@ aside-left, aside-right {
     justify-content: space-between;
     flex-wrap: nowrap;
     align-items: center;
+} */
+
+.head-picture {
+    width: 100%;
+    box-shadow: 0 10px 10px grey;
 }
 
 h1 {
