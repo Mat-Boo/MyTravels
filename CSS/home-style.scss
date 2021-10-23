@@ -26,6 +26,12 @@ $main-color: #0073cc;
 }
 /* End of Bootstrap carousel */
 
+
+main {
+    text-align: justify;
+}
+
+
 .social-insta-content {
     grid-area: social;
     background: darken($color: $main-color, $amount: 10);

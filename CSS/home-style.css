@@ -23,6 +23,10 @@
 }
 
 /* End of Bootstrap carousel */
+main {
+  text-align: justify;
+}
+
 .social-insta-content {
   grid-area: social;
   background: #005699;
