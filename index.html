@@ -8,6 +8,7 @@
   et conseils pour vous aider dans l'organisation de votre prochain trip.">
   <link rel="stylesheet" href="CSS/bootstrap.min.css">
   <link rel="stylesheet" href="CSS/structure-style.css">
+  <link rel="stylesheet" href="CSS/page-style.css">
   <link rel="stylesheet" href="CSS/home-style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,9 +20,9 @@
 </head>
 <body>
   <!-- Main navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
     <div class="container-fluid row">
-      <a class="navbar-brand col col-lg-2" href="index.html">My Travels</a>
+      <a class="navbar-brand col col-lg-2" href="index.html"><img src="ressources/svg/compass.svg" class="nav-logo" alt="logo"> My Travels</a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
       data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
@@ -2674,11 +2675,128 @@
     <!-- End of Bootstrap carousel -->
   </header>
     
-  <aside-left>
-
-  </aside-left>
-
   <main>
+    <div class="intro d-flex flex-column align-items-center">
+      <img src="ressources/svg/compass.svg" class="intro-logo" alt="logo">
+      <h1 class="">My Travels</h1>
+      <div class="intro-text">
+        <p>
+          Bienvenue sur My Travels, site consacré au voyage.</br>
+          Moi c'est Mathieu et je partage ici mes aventures et te donne des conseils selon mon vécu.</br>
+          Que ce soit pour partir en week-end ou en vacances, pour un voyage au long-court ou un tour 
+          du monde, tu trouveras toutes les infos qui te permettront, je l'espère, de faciliter ta future aventure.
+
+        </p>
+      </div>
+    </div>
+    <article class="container-fluid">
+      <h2 class="lastArticles-title row justify-content-center">Les derniers articles :</h2>
+      <div class="lastArticles row row-cols-10 justify-content-center">
+        <div class="left-side-article col col-4 d-flex justify-content-end">
+          <div class="bigCard card">
+            <img src="ressources/photos/destinations/portugal/head-article-algarve.jpg" class="card-img-top" alt="card-algarve">
+            <div class="card-body">
+              <h5 class="card-title">Algarve</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <a href="#" class="discover-button">
+                Découvrir 
+                <svg width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="middle-side-article  col col-3 d-flex flex-column justify-content-between">
+          <div class="smallCard card">
+            <div class="row g-0">
+              <div class="col-4">
+                <img src="ressources/photos/destinations/jordanie/card-jerash.jpg" class="card-img-top smallCard-img-top" alt="card-jerash">
+              </div>
+              <div class="col-8">
+                <div class="card-body">
+                  <h5 class="card-title">Jerash & Amman</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <a href="#" class="discover-button">
+                    Découvrir 
+                    <svg width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="smallCard card">
+            <div class="row g-0">
+              <div class="col-4">
+                <img src="ressources/photos/destinations/jordanie/card-dead-sea.jpg" class="card-img-top smallCard-img-top" alt="card-dead-sea">
+              </div>
+              <div class="col-8">
+                <div class="card-body">
+                  <h5 class="card-title">La Mer Morte</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <a href="#" class="discover-button">
+                    Découvrir 
+                    <svg width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-side-article col col-3 d-flex flex-column justify-content-between">
+          <div class="smallCard card">
+            <div class="row g-0">
+              <div class="col-4">
+                <img src="ressources/photos/destinations/jordanie/card-petra.jpg" class="card-img-top smallCard-img-top" alt="card-petra">
+              </div>  
+              <div class="col-8">
+                <div class="card-body">
+                  <h5 class="card-title">L'incroyable Petra</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <a href="#" class="discover-button">
+                    Découvrir 
+                    <svg width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="smallCard card">
+            <div class="row g-0">
+              <div class="col-4">
+                <img src="ressources/photos/destinations/jordanie/card-wadirum.jpg" class="card-img-top smallCard-img-top" alt="card-wadirum">
+              </div>
+              <div class="col-8">
+                <div class="card-body">
+                  <h5 class="card-title">Desert de Wadi Rum</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <a href="#" class="discover-button">
+                    Découvrir 
+                    <svg width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <div class="whereIAm">
+      <p class="whereIAm-text">Je suis actuellement en <a href="destinations/france.html" class="whereIAm-link">FRANCE</a></p>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5661873.445626489!2d-2.4343140352271257!3d46.13906319806063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54a02933785731%3A0x6bfd3f96c747d9f7!2sFrance!5e0!3m2!1sfr!2sfr!4v1635008980279!5m2!1sfr!2sfr"
+        class="whereIAm-map" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+
     <div>  
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque gravida in fermentum et sollicitudin. Id eu nisl nunc mi ipsum faucibus vitae. Fermentum et sollicitudin ac orci phasellus egestas tellus rutrum. In dictum non consectetur a erat nam at lectus. Eu scelerisque felis imperdiet proin fermentum leo vel orci. Sagittis nisl rhoncus mattis rhoncus urna neque viverra. Massa tincidunt dui ut ornare lectus sit. Sapien et ligula ullamcorper malesuada proin libero nunc consequat interdum. Nisi vitae suscipit tellus mauris a diam. Dolor sit amet consectetur adipiscing elit ut. Ipsum dolor sit amet consectetur adipiscing elit. Id neque aliquam vestibulum morbi blandit cursus risus at. Bibendum at varius vel pharetra vel turpis nunc eget lorem. Fringilla est ullamcorper eget nulla facilisi etiam dignissim. Amet mattis vulputate enim nulla aliquet porttitor lacus luctus.
@@ -2707,11 +2825,11 @@
     </div>
   </main>
 
-  <aside-right>
+<!--   <aside-right>
     <div>
       Bienvenue sur mon site consacré au voyage. Je partage ici mes aventures et te donne des conseils selon mon vécu
     </div>
-  </aside-right>
+  </aside-right> -->
 
   <!-- Instagram widget -->
   <div class="social-insta-content">

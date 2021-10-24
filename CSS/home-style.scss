@@ -1,4 +1,16 @@
+$text-menu-color: #737373;
 $main-color: #0073cc;
+$font-menu: 'Cabin', sans-serif;
+$body-color: rgb(245, 238, 225);
+
+body {
+    grid-template-areas: 
+    "nav nav nav nav nav"
+    "header header header header header"
+    "main main main main main"
+    "social social social social social"
+    "footer footer footer footer footer";
+}
 
 /* Bootstrap carousel */
 #carouselExampleCaptions {
@@ -26,11 +38,104 @@ $main-color: #0073cc;
 }
 /* End of Bootstrap carousel */
 
-
 main {
-    text-align: justify;
+    margin: 0%;
 }
 
+.intro {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.intro-logo{
+   width: 20%;
+   margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 3vw;
+    color: $main-color;
+    text-align: center;
+    width: 75vw;
+    margin-bottom: 40px;
+    box-shadow: 0 0 0;
+    border-radius: 0 0 0 0;
+    position: static;
+    background: none;
+
+}
+
+.intro-text {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+
+
+article {
+    background: rgba($color: $main-color, $alpha: 0.4);
+    
+}
+
+.lastArticles-title {
+    padding-top: 40px;
+}
+
+.lastArticles {
+    padding: 40px;
+}
+
+.bigCard {
+    box-shadow: 0 0 0;  
+}
+
+.card-img-top {
+    margin: 0;
+    padding: 0;
+}
+
+.smallCard-img-top {
+    height: 100%;
+    border-radius: 5px 0 0 5px;
+}
+
+.smallCard {
+    box-shadow: 0 0 0;
+}
+
+.card {
+    margin: 0;
+    padding: 0;
+}
+
+.whereIAm {
+    padding: 40px;
+}
+
+.whereIAm-text {
+    text-align: center;
+    font-size: 2em;
+}
+
+.whereIAm-link {
+    text-decoration: none;
+    background: darken($color: $main-color, $amount: 10);
+    color: white;
+    border-radius: 5px;
+    padding: 2px;
+    border: 1px solid darken($color: $main-color, $amount: 10);
+    &:hover {
+        color: darken($color: $main-color, $amount: 10);
+        background: $body-color;
+    }
+}
+
+.whereIAm-map {
+    width: 100%;
+    height: 400px;
+    box-shadow: 0 10px 10px grey;
+}
 
 .social-insta-content {
     grid-area: social;

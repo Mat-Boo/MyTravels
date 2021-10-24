@@ -1,44 +1,7 @@
+$text-menu-color: #737373;
 $main-color: #0073cc;
-
-/* body{
-    font-family: 'Raleway', sans-serif;
-} */
-
-/* .wrapper {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-areas: 
-    "header header header header header"
-    "aside-left article article article aside-right"
-    "social social social social social";
-} */
-
-/* header {
-    grid-area: header;
-}
-
-
-aside-left {
-    grid-area: aside-left;
-}
-
-article {
-    grid-area: article;
-    margin-top: 40px;
-}
-
-aside-right {
-    grid-area: aside-right;
-}
-
-aside-left, aside-right {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    align-items: center;
-} */
+$font-menu: 'Cabin', sans-serif;
+$body-color: rgb(245, 238, 225);
 
 .head-picture {
     width: 100%;
@@ -89,3 +52,4 @@ h5 {
         border: 1px solid rgba($color: $main-color, $alpha: 0.7);
     }
 }
+

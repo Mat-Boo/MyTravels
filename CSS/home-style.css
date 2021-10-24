@@ -1,3 +1,7 @@
+body {
+      grid-template-areas: "nav nav nav nav nav" "header header header header header" "main main main main main" "social social social social social" "footer footer footer footer footer";
+}
+
 /* Bootstrap carousel */
 #carouselExampleCaptions .carousel-inner .carousel-caption h5, #carouselExampleCaptions .carousel-inner .carousel-caption p {
   text-shadow: 2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, -2px 0 0 black,  2px 2px 0 black, 2px -2px 0 black, -2px 2px 0 black, -2px -2px 0 black;
@@ -24,10 +28,108 @@
 
 /* End of Bootstrap carousel */
 main {
-  text-align: justify;
+  margin: 0%;
+}
+
+.intro {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.intro-logo {
+  width: 20%;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 3vw;
+  color: #0073cc;
+  text-align: center;
+  width: 75vw;
+  margin-bottom: 40px;
+  -webkit-box-shadow: 0 0 0;
+          box-shadow: 0 0 0;
+  border-radius: 0 0 0 0;
+  position: static;
+  background: none;
+}
+
+.intro-text {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+article {
+  background: rgba(0, 115, 204, 0.4);
+}
+
+.lastArticles-title {
+  padding-top: 40px;
+}
+
+.lastArticles {
+  padding: 40px;
+}
+
+.bigCard {
+  -webkit-box-shadow: 0 0 0;
+          box-shadow: 0 0 0;
+}
+
+.card-img-top {
+  margin: 0;
+  padding: 0;
+}
+
+.smallCard-img-top {
+  height: 100%;
+  border-radius: 5px 0 0 5px;
+}
+
+.smallCard {
+  -webkit-box-shadow: 0 0 0;
+          box-shadow: 0 0 0;
+}
+
+.card {
+  margin: 0;
+  padding: 0;
+}
+
+.whereIAm {
+  padding: 40px;
+}
+
+.whereIAm-text {
+  text-align: center;
+  font-size: 2em;
+}
+
+.whereIAm-link {
+  text-decoration: none;
+  background: #005699;
+  color: white;
+  border-radius: 5px;
+  padding: 2px;
+  border: 1px solid #005699;
+}
+
+.whereIAm-link:hover {
+  color: #005699;
+  background: #f5eee1;
+}
+
+.whereIAm-map {
+  width: 100%;
+  height: 400px;
+  -webkit-box-shadow: 0 10px 10px grey;
+          box-shadow: 0 10px 10px grey;
 }
 
 .social-insta-content {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
   grid-area: social;
   background: #005699;
 }

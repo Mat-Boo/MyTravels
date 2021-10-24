@@ -1,8 +1,10 @@
 $text-menu-color: #737373;
 $main-color: #0073cc;
 $font-menu: 'Cabin', sans-serif;
+$body-color: rgb(245, 238, 225);
 
 body {
+    background-color: $body-color;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-areas: 
@@ -14,6 +16,7 @@ body {
 }
 
 nav {
+    background-color: $body-color;
     grid-area: nav;
 }
 
@@ -95,6 +98,11 @@ footer {
     width: 100vw;
     padding: 0;
     z-index: 2;
+    border-bottom: $main-color solid 3px;
+}
+
+.nav-logo {
+    width: 25px;
 }
 
 .navbar > .container-fluid > .navbar-brand, .navbar > .container-fluid  .collapse > .navbar-nav > .nav-item .active {
