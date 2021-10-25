@@ -16,6 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,500;0,800;1,100;1,200;1,500;1,800&display=swap" rel="stylesheet">
+  <link rel="icon" href="ressources/favicon.ico" />
   <title>My Travels</title>
 </head>
 <body>
@@ -2616,11 +2617,11 @@
   
   <header>
     <!-- Bootstrap carousel -->
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div id="home-carousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -2663,11 +2664,11 @@
           </div>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#home-carousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#home-carousel" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
@@ -2685,102 +2686,109 @@
           Moi c'est Mathieu et je partage ici mes aventures et te donne des conseils selon mon vécu.</br>
           Que ce soit pour partir en week-end ou en vacances, pour un voyage au long-court ou un tour 
           du monde, tu trouveras toutes les infos qui te permettront, je l'espère, de faciliter ta future aventure.
-
         </p>
       </div>
     </div>
+
     <article class="container-fluid">
       <h2 class="lastArticles-title row justify-content-center">Les derniers articles :</h2>
       <div class="lastArticles row row-cols-10 justify-content-center">
-        <div class="left-side-article col col-4 d-flex justify-content-end">
-          <div class="bigCard card">
+        <div class="col-10 col-xl-4 d-flex justify-content-end">
+          <div class="bigCard card mb-2 mb-xl-0">
             <img src="ressources/photos/destinations/portugal/head-article-algarve.jpg" class="card-img-top" alt="card-algarve">
             <div class="card-body">
-              <h5 class="card-title">Algarve</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <h5 class="card-title">Portugal</h5>
+              <p class="card-text"><strong>Algarve</strong>, entre falaises, grottes et plages, la côte sud du Portugal n'a pas fini de vous surprendre.</p>
               <a href="#" class="discover-button">
                 Découvrir 
                 <svg width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
                 </svg>
               </a>
+              <a href="destinations/portugal.html">
+                <img src="ressources/flags/pt.svg" class="card-flag" alt="portugal-flag">
+              </a>
             </div>
           </div>
         </div>
-        <div class="middle-side-article  col col-3 d-flex flex-column justify-content-between">
-          <div class="smallCard card">
+        <div class="col col-10 col-xl-3 d-flex flex-column justify-content-between">
+          <div class="smallCard card mb-2 mb-xl-0">
             <div class="row g-0">
-              <div class="col-4">
-                <img src="ressources/photos/destinations/jordanie/card-jerash.jpg" class="card-img-top smallCard-img-top" alt="card-jerash">
-              </div>
+              <div class="col-4 picture-background-smallCard1"></div>
               <div class="col-8">
                 <div class="card-body">
-                  <h5 class="card-title">Jerash & Amman</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <h5 class="card-title">Jordanie</h5>
+                  <p class="card-text"><strong>Amman</strong>, la capitale et sa cité antique <strong>Jerash</strong>.</p>
                   <a href="#" class="discover-button">
                     Découvrir 
                     <svg width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
                     </svg>
                   </a>
+                  <a href="destinations/jordanie.html">
+                    <img src="ressources/flags/jo.svg" class="card-flag" alt="jordan-flag">
+                  </a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="smallCard card">
+          <div class="smallCard card mb-2 mb-xl-0">
             <div class="row g-0">
-              <div class="col-4">
-                <img src="ressources/photos/destinations/jordanie/card-dead-sea.jpg" class="card-img-top smallCard-img-top" alt="card-dead-sea">
-              </div>
+              <div class="col-4 picture-background-smallCard2"></div>
               <div class="col-8">
                 <div class="card-body">
-                  <h5 class="card-title">La Mer Morte</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <h5 class="card-title">Jordanie</h5>
+                  <p class="card-text">Flottez dans les eaux chaudes de la <strong>Mer Morte</strong>.</p>
                   <a href="#" class="discover-button">
                     Découvrir 
                     <svg width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
                     </svg>
+                  </a>
+                  <a href="destinations/jordanie.html">
+                    <img src="ressources/flags/jo.svg" class="card-flag" alt="jordan-flag">
                   </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="right-side-article col col-3 d-flex flex-column justify-content-between">
-          <div class="smallCard card">
+        <div class="col-10 col-xl-3 d-flex flex-column justify-content-between">
+          <div class="smallCard card mb-2 mb-xl-0">
             <div class="row g-0">
-              <div class="col-4">
-                <img src="ressources/photos/destinations/jordanie/card-petra.jpg" class="card-img-top smallCard-img-top" alt="card-petra">
-              </div>  
+              <div class="col-4 picture-background-smallCard3"></div>  
               <div class="col-8">
                 <div class="card-body">
-                  <h5 class="card-title">L'incroyable Petra</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <h5 class="card-title">Jordanie</h5>
+                  <p class="card-text">Une journée pour visiter l'incroyable <strong>Petra</strong>.</p>
                   <a href="#" class="discover-button">
                     Découvrir 
                     <svg width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
                     </svg>
                   </a>
+                  <a href="destinations/jordanie.html">
+                    <img src="ressources/flags/jo.svg" class="card-flag" alt="jordan-flag">
+                  </a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="smallCard card">
+          <div class="smallCard card mb-2 mb-xl-0">
             <div class="row g-0">
-              <div class="col-4">
-                <img src="ressources/photos/destinations/jordanie/card-wadirum.jpg" class="card-img-top smallCard-img-top" alt="card-wadirum">
-              </div>
+              <div class="col-4 picture-background-smallCard4"></div>
               <div class="col-8">
                 <div class="card-body">
-                  <h5 class="card-title">Desert de Wadi Rum</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <h5 class="card-title">Jordanie</h5>
+                  <p class="card-text">4x4, randonnée et nuit dans le <strong>désert de Wadi Rum</strong>.</p>
                   <a href="#" class="discover-button">
                     Découvrir 
                     <svg width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
                     </svg>
+                  </a>
+                  <a href="destinations/jordanie.html">
+                    <img src="ressources/flags/jo.svg" class="card-flag" alt="jordan-flag">
                   </a>
                 </div>
               </div>
@@ -2796,52 +2804,74 @@
         class="whereIAm-map" allowfullscreen="" loading="lazy">
       </iframe>
     </div>
-
-    <div>  
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque gravida in fermentum et sollicitudin. Id eu nisl nunc mi ipsum faucibus vitae. Fermentum et sollicitudin ac orci phasellus egestas tellus rutrum. In dictum non consectetur a erat nam at lectus. Eu scelerisque felis imperdiet proin fermentum leo vel orci. Sagittis nisl rhoncus mattis rhoncus urna neque viverra. Massa tincidunt dui ut ornare lectus sit. Sapien et ligula ullamcorper malesuada proin libero nunc consequat interdum. Nisi vitae suscipit tellus mauris a diam. Dolor sit amet consectetur adipiscing elit ut. Ipsum dolor sit amet consectetur adipiscing elit. Id neque aliquam vestibulum morbi blandit cursus risus at. Bibendum at varius vel pharetra vel turpis nunc eget lorem. Fringilla est ullamcorper eget nulla facilisi etiam dignissim. Amet mattis vulputate enim nulla aliquet porttitor lacus luctus.
-      </p>
+    <div class="lorem-ipsum1">
+      <div>  
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque gravida in fermentum et sollicitudin. Id eu nisl nunc mi ipsum faucibus vitae. Fermentum et sollicitudin ac orci phasellus egestas tellus rutrum. In dictum non consectetur a erat nam at lectus. Eu scelerisque felis imperdiet proin fermentum leo vel orci. Sagittis nisl rhoncus mattis rhoncus urna neque viverra. Massa tincidunt dui ut ornare lectus sit. Sapien et ligula ullamcorper malesuada proin libero nunc consequat interdum. Nisi vitae suscipit tellus mauris a diam. Dolor sit amet consectetur adipiscing elit ut. Ipsum dolor sit amet consectetur adipiscing elit. Id neque aliquam vestibulum morbi blandit cursus risus at. Bibendum at varius vel pharetra vel turpis nunc eget lorem. Fringilla est ullamcorper eget nulla facilisi etiam dignissim. Amet mattis vulputate enim nulla aliquet porttitor lacus luctus.
+        </p>
+      </div>
+      <div>
+        <p>
+          Enim sed faucibus turpis in eu mi bibendum neque egestas. Sed adipiscing diam donec adipiscing tristique risus nec. Purus ut faucibus pulvinar elementum integer enim neque volutpat. Mi in nulla posuere sollicitudin aliquam. Enim ut tellus elementum sagittis vitae et leo. Semper viverra nam libero justo laoreet sit. Ornare lectus sit amet est placerat in. Nam aliquam sem et tortor consequat id porta. Massa tincidunt nunc pulvinar sapien et. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Est sit amet facilisis magna etiam tempor. Magnis dis parturient montes nascetur ridiculus mus mauris. Pretium aenean pharetra magna ac placerat vestibulum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque gravida in fermentum et sollicitudin. Id eu nisl nunc mi ipsum faucibus vitae. Fermentum et sollicitudin ac orci phasellus egestas tellus rutrum. In dictum non consectetur a erat nam at lectus. Eu scelerisque felis imperdiet proin fermentum leo vel orci. Sagittis nisl rhoncus mattis rhoncus urna neque viverra. Massa tincidunt dui ut ornare lectus sit. Sapien et ligula ullamcorper malesuada proin libero nunc consequat interdum. Nisi vitae suscipit tellus mauris a diam. Dolor sit amet consectetur adipiscing elit ut. Ipsum dolor sit amet consectetur adipiscing elit. Id neque aliquam vestibulum morbi blandit cursus risus at. Bibendum at varius vel pharetra vel turpis nunc eget lorem. Fringilla est ullamcorper eget nulla facilisi etiam dignissim. Amet mattis vulputate enim nulla aliquet porttitor lacus luctus.
+        </p>
+      </div>
+      <div>
+        <p>
+          Enim sed faucibus turpis in eu mi bibendum neque egestas. Sed adipiscing diam donec adipiscing tristique risus nec. Purus ut faucibus pulvinar elementum integer enim neque volutpat. Mi in nulla posuere sollicitudin aliquam. Enim ut tellus elementum sagittis vitae et leo. Semper viverra nam libero justo laoreet sit. Ornare lectus sit amet est placerat in. Nam aliquam sem et tortor consequat id porta. Massa tincidunt nunc pulvinar sapien et. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Est sit amet facilisis magna etiam tempor. Magnis dis parturient montes nascetur ridiculus mus mauris. Pretium aenean pharetra magna ac placerat vestibulum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque gravida in fermentum et sollicitudin. Id eu nisl nunc mi ipsum faucibus vitae. Fermentum et sollicitudin ac orci phasellus egestas tellus rutrum. In dictum non consectetur a erat nam at lectus. Eu scelerisque felis imperdiet proin fermentum leo vel orci. Sagittis nisl rhoncus mattis rhoncus urna neque viverra. Massa tincidunt dui ut ornare lectus sit. Sapien et ligula ullamcorper malesuada proin libero nunc consequat interdum. Nisi vitae suscipit tellus mauris a diam. Dolor sit amet consectetur adipiscing elit ut. Ipsum dolor sit amet consectetur adipiscing elit. Id neque aliquam vestibulum morbi blandit cursus risus at. Bibendum at varius vel pharetra vel turpis nunc eget lorem. Fringilla est ullamcorper eget nulla facilisi etiam dignissim. Amet mattis vulputate enim nulla aliquet porttitor lacus luctus.
+        </p>
+      </div>
+      <div>
+        <p>
+          Enim sed faucibus turpis in eu mi bibendum neque egestas. Sed adipiscing diam donec adipiscing tristique risus nec. Purus ut faucibus pulvinar elementum integer enim neque volutpat. Mi in nulla posuere sollicitudin aliquam. Enim ut tellus elementum sagittis vitae et leo. Semper viverra nam libero justo laoreet sit. Ornare lectus sit amet est placerat in. Nam aliquam sem et tortor consequat id porta. Massa tincidunt nunc pulvinar sapien et. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Est sit amet facilisis magna etiam tempor. Magnis dis parturient montes nascetur ridiculus mus mauris. Pretium aenean pharetra magna ac placerat vestibulum.
+        </p>
+      </div>
     </div>
-    <div>
-      <p>
-        Enim sed faucibus turpis in eu mi bibendum neque egestas. Sed adipiscing diam donec adipiscing tristique risus nec. Purus ut faucibus pulvinar elementum integer enim neque volutpat. Mi in nulla posuere sollicitudin aliquam. Enim ut tellus elementum sagittis vitae et leo. Semper viverra nam libero justo laoreet sit. Ornare lectus sit amet est placerat in. Nam aliquam sem et tortor consequat id porta. Massa tincidunt nunc pulvinar sapien et. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Est sit amet facilisis magna etiam tempor. Magnis dis parturient montes nascetur ridiculus mus mauris. Pretium aenean pharetra magna ac placerat vestibulum.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque gravida in fermentum et sollicitudin. Id eu nisl nunc mi ipsum faucibus vitae. Fermentum et sollicitudin ac orci phasellus egestas tellus rutrum. In dictum non consectetur a erat nam at lectus. Eu scelerisque felis imperdiet proin fermentum leo vel orci. Sagittis nisl rhoncus mattis rhoncus urna neque viverra. Massa tincidunt dui ut ornare lectus sit. Sapien et ligula ullamcorper malesuada proin libero nunc consequat interdum. Nisi vitae suscipit tellus mauris a diam. Dolor sit amet consectetur adipiscing elit ut. Ipsum dolor sit amet consectetur adipiscing elit. Id neque aliquam vestibulum morbi blandit cursus risus at. Bibendum at varius vel pharetra vel turpis nunc eget lorem. Fringilla est ullamcorper eget nulla facilisi etiam dignissim. Amet mattis vulputate enim nulla aliquet porttitor lacus luctus.
-      </p>
-    </div>
-    <div>
-      <p>
-        Enim sed faucibus turpis in eu mi bibendum neque egestas. Sed adipiscing diam donec adipiscing tristique risus nec. Purus ut faucibus pulvinar elementum integer enim neque volutpat. Mi in nulla posuere sollicitudin aliquam. Enim ut tellus elementum sagittis vitae et leo. Semper viverra nam libero justo laoreet sit. Ornare lectus sit amet est placerat in. Nam aliquam sem et tortor consequat id porta. Massa tincidunt nunc pulvinar sapien et. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Est sit amet facilisis magna etiam tempor. Magnis dis parturient montes nascetur ridiculus mus mauris. Pretium aenean pharetra magna ac placerat vestibulum.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque gravida in fermentum et sollicitudin. Id eu nisl nunc mi ipsum faucibus vitae. Fermentum et sollicitudin ac orci phasellus egestas tellus rutrum. In dictum non consectetur a erat nam at lectus. Eu scelerisque felis imperdiet proin fermentum leo vel orci. Sagittis nisl rhoncus mattis rhoncus urna neque viverra. Massa tincidunt dui ut ornare lectus sit. Sapien et ligula ullamcorper malesuada proin libero nunc consequat interdum. Nisi vitae suscipit tellus mauris a diam. Dolor sit amet consectetur adipiscing elit ut. Ipsum dolor sit amet consectetur adipiscing elit. Id neque aliquam vestibulum morbi blandit cursus risus at. Bibendum at varius vel pharetra vel turpis nunc eget lorem. Fringilla est ullamcorper eget nulla facilisi etiam dignissim. Amet mattis vulputate enim nulla aliquet porttitor lacus luctus.
-      </p>
-    </div>
-    <div>
-      <p>
-        Enim sed faucibus turpis in eu mi bibendum neque egestas. Sed adipiscing diam donec adipiscing tristique risus nec. Purus ut faucibus pulvinar elementum integer enim neque volutpat. Mi in nulla posuere sollicitudin aliquam. Enim ut tellus elementum sagittis vitae et leo. Semper viverra nam libero justo laoreet sit. Ornare lectus sit amet est placerat in. Nam aliquam sem et tortor consequat id porta. Massa tincidunt nunc pulvinar sapien et. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Est sit amet facilisis magna etiam tempor. Magnis dis parturient montes nascetur ridiculus mus mauris. Pretium aenean pharetra magna ac placerat vestibulum.
-      </p>
+    <div class="lorem-ipsum2">
+      <div>  
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque gravida in fermentum et sollicitudin. Id eu nisl nunc mi ipsum faucibus vitae. Fermentum et sollicitudin ac orci phasellus egestas tellus rutrum. In dictum non consectetur a erat nam at lectus. Eu scelerisque felis imperdiet proin fermentum leo vel orci. Sagittis nisl rhoncus mattis rhoncus urna neque viverra. Massa tincidunt dui ut ornare lectus sit. Sapien et ligula ullamcorper malesuada proin libero nunc consequat interdum. Nisi vitae suscipit tellus mauris a diam. Dolor sit amet consectetur adipiscing elit ut. Ipsum dolor sit amet consectetur adipiscing elit. Id neque aliquam vestibulum morbi blandit cursus risus at. Bibendum at varius vel pharetra vel turpis nunc eget lorem. Fringilla est ullamcorper eget nulla facilisi etiam dignissim. Amet mattis vulputate enim nulla aliquet porttitor lacus luctus.
+        </p>
+      </div>
+      <div>
+        <p>
+          Enim sed faucibus turpis in eu mi bibendum neque egestas. Sed adipiscing diam donec adipiscing tristique risus nec. Purus ut faucibus pulvinar elementum integer enim neque volutpat. Mi in nulla posuere sollicitudin aliquam. Enim ut tellus elementum sagittis vitae et leo. Semper viverra nam libero justo laoreet sit. Ornare lectus sit amet est placerat in. Nam aliquam sem et tortor consequat id porta. Massa tincidunt nunc pulvinar sapien et. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Est sit amet facilisis magna etiam tempor. Magnis dis parturient montes nascetur ridiculus mus mauris. Pretium aenean pharetra magna ac placerat vestibulum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque gravida in fermentum et sollicitudin. Id eu nisl nunc mi ipsum faucibus vitae. Fermentum et sollicitudin ac orci phasellus egestas tellus rutrum. In dictum non consectetur a erat nam at lectus. Eu scelerisque felis imperdiet proin fermentum leo vel orci. Sagittis nisl rhoncus mattis rhoncus urna neque viverra. Massa tincidunt dui ut ornare lectus sit. Sapien et ligula ullamcorper malesuada proin libero nunc consequat interdum. Nisi vitae suscipit tellus mauris a diam. Dolor sit amet consectetur adipiscing elit ut. Ipsum dolor sit amet consectetur adipiscing elit. Id neque aliquam vestibulum morbi blandit cursus risus at. Bibendum at varius vel pharetra vel turpis nunc eget lorem. Fringilla est ullamcorper eget nulla facilisi etiam dignissim. Amet mattis vulputate enim nulla aliquet porttitor lacus luctus.
+        </p>
+      </div>
+      <div>
+        <p>
+          Enim sed faucibus turpis in eu mi bibendum neque egestas. Sed adipiscing diam donec adipiscing tristique risus nec. Purus ut faucibus pulvinar elementum integer enim neque volutpat. Mi in nulla posuere sollicitudin aliquam. Enim ut tellus elementum sagittis vitae et leo. Semper viverra nam libero justo laoreet sit. Ornare lectus sit amet est placerat in. Nam aliquam sem et tortor consequat id porta. Massa tincidunt nunc pulvinar sapien et. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Est sit amet facilisis magna etiam tempor. Magnis dis parturient montes nascetur ridiculus mus mauris. Pretium aenean pharetra magna ac placerat vestibulum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque gravida in fermentum et sollicitudin. Id eu nisl nunc mi ipsum faucibus vitae. Fermentum et sollicitudin ac orci phasellus egestas tellus rutrum. In dictum non consectetur a erat nam at lectus. Eu scelerisque felis imperdiet proin fermentum leo vel orci. Sagittis nisl rhoncus mattis rhoncus urna neque viverra. Massa tincidunt dui ut ornare lectus sit. Sapien et ligula ullamcorper malesuada proin libero nunc consequat interdum. Nisi vitae suscipit tellus mauris a diam. Dolor sit amet consectetur adipiscing elit ut. Ipsum dolor sit amet consectetur adipiscing elit. Id neque aliquam vestibulum morbi blandit cursus risus at. Bibendum at varius vel pharetra vel turpis nunc eget lorem. Fringilla est ullamcorper eget nulla facilisi etiam dignissim. Amet mattis vulputate enim nulla aliquet porttitor lacus luctus.
+        </p>
+      </div>
+      <div>
+        <p>
+          Enim sed faucibus turpis in eu mi bibendum neque egestas. Sed adipiscing diam donec adipiscing tristique risus nec. Purus ut faucibus pulvinar elementum integer enim neque volutpat. Mi in nulla posuere sollicitudin aliquam. Enim ut tellus elementum sagittis vitae et leo. Semper viverra nam libero justo laoreet sit. Ornare lectus sit amet est placerat in. Nam aliquam sem et tortor consequat id porta. Massa tincidunt nunc pulvinar sapien et. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Est sit amet facilisis magna etiam tempor. Magnis dis parturient montes nascetur ridiculus mus mauris. Pretium aenean pharetra magna ac placerat vestibulum.
+        </p>
+      </div>
     </div>
   </main>
-
-<!--   <aside-right>
-    <div>
-      Bienvenue sur mon site consacré au voyage. Je partage ici mes aventures et te donne des conseils selon mon vécu
-    </div>
-  </aside-right> -->
 
   <!-- Instagram widget -->
   <div class="social-insta-content">
     <div class="social-insta">
-      <p>Suivez mes aventures en photo sur <a href="https://www.instagram.com/mathieu_world_tour/" target="_blank" class="instagram-link">Instagram</a></p>
+      <p class="instaFollow-text">Suivez mes aventures en photo sur <a href="https://www.instagram.com/mathieu_world_tour/" target="_blank" class="instagram-link">Instagram</a></p>
       <script src="https://apps.elfsight.com/p/platform.js" defer></script>
       <div class="elfsight-app-18d10ca8-4643-48c5-bfff-4e918f121e4a"></div>
       <div class="blue-block"></div> <!-- Hide pub block -->
     </div>
   </div>
   <!-- End of Instagram widget -->
-
 
   <footer class="d-flex flex-column align-items-center">
     <p>© 2021 - créé par Mathieu de <b><a href="index.html" class="footer-mytravels-link">My Travels</a></b></p>

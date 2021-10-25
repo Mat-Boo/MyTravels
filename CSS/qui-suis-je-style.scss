@@ -57,3 +57,26 @@ main {
         background: white;
     }
 }
+
+@media screen and (max-width: 1199px) {
+    body {
+        grid-template-areas: 
+        "nav nav nav nav nav"
+        "header header header header header"
+        "aside-left aside-left aside-left aside-left aside-left"
+        "main main main main main"
+        "aside-right aside-right aside-right aside-right aside-right"
+        "footer footer footer footer footer";
+    }
+    aside-left, aside-right {
+        display: flex;
+        flex-direction: row;
+    }
+    .aside-picture {
+        width: 16%;
+        margin: 0;
+        padding: 0;
+
+    }
+
+}

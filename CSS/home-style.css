@@ -3,16 +3,16 @@ body {
 }
 
 /* Bootstrap carousel */
-#carouselExampleCaptions .carousel-inner .carousel-caption h5, #carouselExampleCaptions .carousel-inner .carousel-caption p {
+#home-carousel .carousel-inner .carousel-caption h5, #home-carousel .carousel-inner .carousel-caption p {
   text-shadow: 2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, -2px 0 0 black,  2px 2px 0 black, 2px -2px 0 black, -2px 2px 0 black, -2px -2px 0 black;
 }
 
-#carouselExampleCaptions .carousel-inner .carousel-caption h5 {
+#home-carousel .carousel-inner .carousel-caption h5 {
   font-size: 3vw;
-  position: relative;
+  /*         position: relative; */
 }
 
-#carouselExampleCaptions .carousel-inner .carousel-caption p {
+#home-carousel .carousel-inner .carousel-caption p {
   font-size: 1.125vw;
 }
 
@@ -21,8 +21,14 @@ body {
           box-shadow: 0 10px 10px grey;
 }
 
+.carousel-caption {
+  padding-top: 0;
+  padding-bottom: 1%;
+}
+
 .carousel-indicators {
-  bottom: -15px;
+  /*     bottom: -15px; */
+  margin-bottom: 0;
   z-index: 1;
 }
 
@@ -42,7 +48,7 @@ main {
 }
 
 h1 {
-  font-size: 3vw;
+  font-size: calc(1px + 3vw);
   color: #0073cc;
   text-align: center;
   width: 75vw;
@@ -56,7 +62,7 @@ h1 {
 
 .intro-text {
   text-align: center;
-  font-size: 1.5em;
+  font-size: calc(12px + 0.5vw);
 }
 
 article {
@@ -65,35 +71,63 @@ article {
 
 .lastArticles-title {
   padding-top: 40px;
+  font-size: calc(16px + 1vw);
 }
 
 .lastArticles {
-  padding: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
-.bigCard {
+.bigCard, .smallCard {
   -webkit-box-shadow: 0 0 0;
           box-shadow: 0 0 0;
 }
 
-.card-img-top {
+.card, .card-img-top {
   margin: 0;
   padding: 0;
 }
 
-.smallCard-img-top {
-  height: 100%;
+.picture-background-smallCard1, .picture-background-smallCard2, .picture-background-smallCard3, .picture-background-smallCard4 {
   border-radius: 5px 0 0 5px;
 }
 
-.smallCard {
-  -webkit-box-shadow: 0 0 0;
-          box-shadow: 0 0 0;
+.picture-background-smallCard1 {
+  background: url("../ressources/photos/destinations/jordanie/card-jerash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.card {
-  margin: 0;
-  padding: 0;
+.picture-background-smallCard2 {
+  background: url("../ressources/photos/destinations/jordanie/card-dead-sea.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.picture-background-smallCard3 {
+  background: url("../ressources/photos/destinations/jordanie/card-petra.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.picture-background-smallCard4 {
+  background: url("../ressources/photos/destinations/jordanie/card-wadirum.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-body {
+  position: relative;
+}
+
+.card-flag {
+  width: 30px;
+  height: 20px;
+  border-radius: 4px;
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
 }
 
 .whereIAm {
@@ -102,20 +136,20 @@ article {
 
 .whereIAm-text {
   text-align: center;
-  font-size: 2em;
+  font-size: calc(16px + 1vw);
 }
 
 .whereIAm-link {
   text-decoration: none;
-  background: #005699;
+  background: #0073cc;
   color: white;
   border-radius: 5px;
   padding: 2px;
-  border: 1px solid #005699;
+  border: 1px solid #0073cc;
 }
 
 .whereIAm-link:hover {
-  color: #005699;
+  color: #0073cc;
   background: #f5eee1;
 }
 
@@ -124,6 +158,18 @@ article {
   height: 400px;
   -webkit-box-shadow: 0 10px 10px grey;
           box-shadow: 0 10px 10px grey;
+}
+
+.lorem-ipsum1 {
+  background: rgba(0, 115, 204, 0.4);
+  text-align: justify;
+  padding: 40px;
+}
+
+.lorem-ipsum2 {
+  background: #f5eee1;
+  text-align: justify;
+  padding: 40px;
 }
 
 .social-insta-content {
@@ -155,6 +201,10 @@ article {
   margin-bottom: 35px;
   color: white;
   font-size: 2em;
+}
+
+.instaFollow-text {
+  text-align: center;
 }
 
 .instagram-link {

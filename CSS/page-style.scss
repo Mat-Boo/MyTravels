@@ -41,7 +41,6 @@ h5 {
 }
 
 .card-text {
-    text-align: justify;
     font-weight: 200;
     font-size: 1em;
 }
@@ -49,7 +48,29 @@ h5 {
 .discover-button {
     font-size: 1em;
     &:hover {
-        border: 1px solid rgba($color: $main-color, $alpha: 0.7);
+        border: 1px solid $main-color;
     }
 }
 
+@media screen and (max-width: 576px) {
+    body {
+        grid-template-areas: 
+        "nav nav nav nav nav"
+        "header header header header header"
+        "aside-left aside-left aside-left aside-left aside-left"
+        "main main main main main"
+        "aside-right aside-right aside-right aside-right aside-right"
+        "footer footer footer footer footer";
+    }
+    aside-left, aside-right {
+        display: flex;
+        flex-direction: row;
+    }
+    .aside-picture {
+        width: 16%;
+        margin: 0;
+        padding: 0;
+
+    }
+
+}
