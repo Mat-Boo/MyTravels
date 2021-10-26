@@ -53,8 +53,8 @@ main {
   color: #005699;
   background: white;
 }
-/* END of my presentation */
 
+/* END of my presentation */
 /* aside pictures */
 .aside-picture {
   margin-left: 1%;
@@ -67,17 +67,12 @@ main {
 .last-aside-picture {
   margin-bottom: 0;
 }
-/* END of aside pictures */
 
+/* END of aside pictures */
 @media screen and (max-width: 1199px) {
   /* Déplace aside-left sous le header et aside-right au-dessus du footer pour les résolutions inférieures à 1200px*/
   body {
-        grid-template-areas: "nav nav nav nav nav"
- "header header header header header"
- "aside-left aside-left aside-left aside-left aside-left"
- "main main main main main"
- "aside-right aside-right aside-right aside-right aside-right"
- "footer footer footer footer footer";
+        grid-template-areas: "nav nav nav nav nav" "header header header header header" "aside-left aside-left aside-left aside-left aside-left" "main main main main main" "aside-right aside-right aside-right aside-right aside-right" "footer footer footer footer footer";
   }
   aside-left, aside-right {
     display: -webkit-box;

@@ -23,9 +23,13 @@ nav {
 
 header {
     grid-area: header;
+    position: relative;
+    top: 40px;
 }
 
 aside-left, aside-right, main, footer {
+    position: relative;
+    top: 40px;
     margin-top: 40px;
 }
 

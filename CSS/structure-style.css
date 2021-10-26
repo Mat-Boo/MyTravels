@@ -4,11 +4,7 @@ body {
   display: grid;
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
-      grid-template-areas: "nav nav nav nav nav"
- "header header header header header"
- "aside-left main main main aside-right"
- "social social social social social"
- "footer footer footer footer footer";
+      grid-template-areas: "nav nav nav nav nav" "header header header header header" "aside-left main main main aside-right" "social social social social social" "footer footer footer footer footer";
 }
 
 nav {
@@ -24,9 +20,13 @@ header {
   -ms-grid-column: 1;
   -ms-grid-column-span: 5;
   grid-area: header;
+  position: relative;
+  top: 40px;
 }
 
 aside-left, aside-right, main, footer {
+  position: relative;
+  top: 40px;
   margin-top: 40px;
 }
 
@@ -117,8 +117,8 @@ footer {
   width: 25px;
   color: white;
 }
-/* END of Footer */
 
+/* END of Footer */
 /* Main navbar */
 .navbar {
   font-family: "Cabin", sans-serif;
@@ -278,8 +278,8 @@ footer {
   height: 15px;
   border-radius: 4px;
 }
-/* END of displayable block DESTINATIONS hover (SMALL menu for Destinations Menu, resolution < 992px) */
 
+/* END of displayable block DESTINATIONS hover (SMALL menu for Destinations Menu, resolution < 992px) */
 /* displayable block DESTINATIONS hover (BIG menu for Destinations Menu, resolution >= 992px) */
 @media screen and (min-width: 992px) {
   #destinations:hover .destinations-menu {
@@ -471,8 +471,8 @@ footer {
   margin-right: 8px;
   border-radius: 4px;
 }
-/* END of displayable block DESTINATIONS hover (BIG menu for Destinations Menu, resolution >= 992px) */
 
+/* END of displayable block DESTINATIONS hover (BIG menu for Destinations Menu, resolution >= 992px) */
 /* displayable block A PROPOS hover */
 @media screen and (min-width: 992px) {
   .apropos-menu {
@@ -526,9 +526,9 @@ footer {
   padding-top: 5px;
   padding-bottom: 5px;
 }
+
 /* END of displayable block A PROPOS hover */
 /* END of Main navbar */
-
 /* Modal Window for CONTACT in A Propos Menu */
 .contact-modal {
   background: #f5eee1;
@@ -561,8 +561,8 @@ footer {
   color: #5C636A;
   border: 1px solid #5C636A;
 }
-/* END of Modal Window for CONTACT in A Propos Menu */
 
+/* END of Modal Window for CONTACT in A Propos Menu */
 /* Modal Window for SEARCH in Main-Menu */
 .search-modal {
   background: rgba(255, 255, 255, 0.6);
@@ -605,8 +605,8 @@ footer {
   min-width: 16px;
   max-width: 32px;
 }
-/* END of Modal Window for SEARCH in Main-Menu */
 
+/* END of Modal Window for SEARCH in Main-Menu */
 .discover-button {
   text-decoration: none;
   color: white;

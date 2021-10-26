@@ -43,11 +43,6 @@ body {
 /* End of Bootstrap carousel */
 
 /* Introduction with logo, name and message */
-.intro {
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
 .intro-logo{
    width: 20%;
    min-width: 140px;
@@ -261,4 +256,5 @@ article {
 
 footer {
     margin-top: 0;
+    top: 0;
 }
