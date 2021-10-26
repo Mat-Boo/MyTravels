@@ -36,10 +36,6 @@ body {
 }
 /* End of Bootstrap carousel */
 
-main {
-  margin: 0%;
-}
-
 /* Introduction with logo, name and message */
 .intro {
   margin-top: 40px;
@@ -152,6 +148,15 @@ article {
   }
   .card-title {
     font-size: 1.2vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  article.container-fluid, .lastArticles {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 /* END of last articles */
