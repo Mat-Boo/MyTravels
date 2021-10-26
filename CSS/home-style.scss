@@ -1,6 +1,7 @@
 $text-menu-color: #737373;
 $main-color: #0073cc;
-$font-menu: 'Cabin', sans-serif;
+$menu-font: 'Cabin', sans-serif;
+$main-font: 'Raleway', sans-serif;
 $body-color: rgb(245, 238, 225);
 
 body {
@@ -20,8 +21,6 @@ body {
     }
     .carousel-inner .carousel-caption h5 {
         font-size: 3vw;
-/*         position: relative; */
-
     }
     .carousel-inner .carousel-caption p {
         font-size: 1.125vw;
@@ -38,7 +37,6 @@ body {
 }
 
 .carousel-indicators {
-/*     bottom: -15px; */
     margin-bottom: 0 ;
     z-index: 1;
 }
@@ -48,6 +46,7 @@ main {
     margin: 0%;
 }
 
+/* Introduction with logo, name and message */
 .intro {
     margin-top: 40px;
     margin-bottom: 40px;
@@ -55,15 +54,16 @@ main {
 
 .intro-logo{
    width: 20%;
-   margin-bottom: 30px;
+   min-width: 140px;
+   margin-bottom: 3%;
 }
 
 h1 {
-    font-size:calc(1px + 3vw); 
+    font-size:calc(10px + 3vw); 
     color: $main-color;
     text-align: center;
     width: 75vw;
-    margin-bottom: 40px;
+    margin-bottom: 3%;
     box-shadow: 0 0 0;
     border-radius: 0 0 0 0;
     position: static;
@@ -72,9 +72,13 @@ h1 {
 
 .intro-text {
     text-align: center;
-    font-size:calc(12px + 0.5vw); 
+    font-size:calc(12px + 0.5vw);
+    padding-left: 20px;
+    padding-right: 20px;
 }
+/* END of Introduction with logo, name and message */
 
+/* Last articles */
 article {
     background: rgba($color: $main-color, $alpha: 0.4);
 }
@@ -98,7 +102,8 @@ article {
     padding: 0;
 }
 
-.picture-background-smallCard1, .picture-background-smallCard2, .picture-background-smallCard3, .picture-background-smallCard4 {
+.picture-background-smallCard1, .picture-background-smallCard2, .picture-background-smallCard3, 
+.picture-background-smallCard4 {
     border-radius: 5px 0 0 5px;
 }
 
@@ -139,6 +144,23 @@ article {
     bottom: 8px;
 }
 
+@media screen and (min-width: 1666px) {
+    .lastArticles, .lastArticles-title {
+        width: 1666px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1665px) {
+    .card-text, .discover-button {
+        font-size: 0.95vw;
+    }
+    .card-title {
+        font-size: 1.2vw;
+    }
+}
+/* END of last articles */
+
+/* Map Where I am */
 .whereIAm {
     padding: 40px;
 }
@@ -166,7 +188,9 @@ article {
     height: 400px;
     box-shadow: 0 10px 10px grey;
 }
+/* END of Map Where I am */
 
+/* 2 sections not ready for now */
 .lorem-ipsum1 {
     background: rgba($color: $main-color, $alpha: 0.4);
     text-align: justify;
@@ -178,6 +202,9 @@ article {
     text-align: justify;
     padding: 40px;
 }
+/* END of 2 sections not ready for now */
+
+/* Instagram widget */
 .social-insta-content {
     grid-area: social;
     background: darken($color: $main-color, $amount: 10);
@@ -216,8 +243,7 @@ article {
     }
 }
 
-/* Bypass block to hide the elfsight pub of widget */
-.blue-block {
+.blue-block { /* Bypass block to hide the elfsight pub of widget */
     width: 120%;
     height: 50px;
     background: darken($color: $main-color, $amount: 10);
@@ -226,6 +252,7 @@ article {
     z-index: 99999;
     border-bottom: white 1px solid;
 }
+/* END of Instagram widget */
 
 footer {
     margin-top: 0;

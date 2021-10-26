@@ -1,8 +1,10 @@
 $text-menu-color: #737373;
 $main-color: #0073cc;
-$font-menu: 'Cabin', sans-serif;
+$menu-font: 'Cabin', sans-serif;
+$main-font: 'Raleway', sans-serif;
 $body-color: rgb(245, 238, 225);
 
+/* Picture of header with main title */
 .head-picture {
     width: 100%;
     box-shadow: 0 10px 10px grey;
@@ -21,7 +23,9 @@ h1 {
     position: absolute;
     top: 5%;
 }
+/* END of Picture of header with main title */
 
+ /* Article's card */
 .card {
     font-size: 1rem;
     border-radius: 5px;
@@ -51,8 +55,10 @@ h5 {
         border: 1px solid $main-color;
     }
 }
+/* END of Article's card */
 
 @media screen and (max-width: 576px) {
+    /* Déplace aside-left sous le header et aside-right au-dessus du footer pour les résolutions inférieures à 1200px*/
     body {
         grid-template-areas: 
         "nav nav nav nav nav"

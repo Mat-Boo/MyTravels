@@ -1,8 +1,18 @@
 $text-menu-color: #737373;
 $main-color: #0073cc;
-$font-menu: 'Cabin', sans-serif;
+$menu-font: 'Cabin', sans-serif;
+$main-font: 'Raleway', sans-serif;
 $body-color: rgb(245, 238, 225);
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+/* My presentation */
 .presentation, .why-website {
     text-align: justify;
     background: rgba($color: $main-color, $alpha: 0.2);
@@ -22,26 +32,6 @@ $body-color: rgb(245, 238, 225);
     padding: 2%;
 }
 
-.aside-picture {
-    margin-left: 1%;
-    margin-right: 1%;
-    margin-bottom: 1%;
-    border-radius: 10px;
-    width: 97%;
-}
-
-.last-aside-picture {
-    margin-bottom: 0;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    align-items: center;
-}
-
 .impact-list {
     margin-bottom: 20px;
 }
@@ -57,8 +47,25 @@ main {
         background: white;
     }
 }
+/* END of my presentation */
+
+/* aside pictures */
+.aside-picture {
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    border-radius: 10px;
+    width: 97%;
+}
+
+.last-aside-picture {
+    margin-bottom: 0;
+}
+/* END of aside pictures */
+
 
 @media screen and (max-width: 1199px) {
+    /* Déplace aside-left sous le header et aside-right au-dessus du footer pour les résolutions inférieures à 1200px*/
     body {
         grid-template-areas: 
         "nav nav nav nav nav"

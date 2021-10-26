@@ -1,15 +1,19 @@
 body {
-      grid-template-areas: "nav nav nav nav nav" "header header header header header" "main main main main main" "social social social social social" "footer footer footer footer footer";
+      grid-template-areas: "nav nav nav nav nav"
+ "header header header header header"
+ "main main main main main"
+ "social social social social social"
+ "footer footer footer footer footer";
 }
 
 /* Bootstrap carousel */
 #home-carousel .carousel-inner .carousel-caption h5, #home-carousel .carousel-inner .carousel-caption p {
-  text-shadow: 2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, -2px 0 0 black,  2px 2px 0 black, 2px -2px 0 black, -2px 2px 0 black, -2px -2px 0 black;
+  text-shadow: 2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, -2px 0 0 black, 
+ 2px 2px 0 black, 2px -2px 0 black, -2px 2px 0 black, -2px -2px 0 black;
 }
 
 #home-carousel .carousel-inner .carousel-caption h5 {
   font-size: 3vw;
-  /*         position: relative; */
 }
 
 #home-carousel .carousel-inner .carousel-caption p {
@@ -27,16 +31,16 @@ body {
 }
 
 .carousel-indicators {
-  /*     bottom: -15px; */
   margin-bottom: 0;
   z-index: 1;
 }
-
 /* End of Bootstrap carousel */
+
 main {
   margin: 0%;
 }
 
+/* Introduction with logo, name and message */
 .intro {
   margin-top: 40px;
   margin-bottom: 40px;
@@ -44,15 +48,16 @@ main {
 
 .intro-logo {
   width: 20%;
-  margin-bottom: 30px;
+  min-width: 140px;
+  margin-bottom: 3%;
 }
 
 h1 {
-  font-size: calc(1px + 3vw);
+  font-size: calc(10px + 3vw);
   color: #0073cc;
   text-align: center;
   width: 75vw;
-  margin-bottom: 40px;
+  margin-bottom: 3%;
   -webkit-box-shadow: 0 0 0;
           box-shadow: 0 0 0;
   border-radius: 0 0 0 0;
@@ -63,8 +68,12 @@ h1 {
 .intro-text {
   text-align: center;
   font-size: calc(12px + 0.5vw);
+  padding-left: 20px;
+  padding-right: 20px;
 }
+/* END of Introduction with logo, name and message */
 
+/* Last articles */
 article {
   background: rgba(0, 115, 204, 0.4);
 }
@@ -89,7 +98,8 @@ article {
   padding: 0;
 }
 
-.picture-background-smallCard1, .picture-background-smallCard2, .picture-background-smallCard3, .picture-background-smallCard4 {
+.picture-background-smallCard1, .picture-background-smallCard2, .picture-background-smallCard3,
+.picture-background-smallCard4 {
   border-radius: 5px 0 0 5px;
 }
 
@@ -130,6 +140,23 @@ article {
   bottom: 8px;
 }
 
+@media screen and (min-width: 1666px) {
+  .lastArticles, .lastArticles-title {
+    width: 1666px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1665px) {
+  .card-text, .discover-button {
+    font-size: 0.95vw;
+  }
+  .card-title {
+    font-size: 1.2vw;
+  }
+}
+/* END of last articles */
+
+/* Map Where I am */
 .whereIAm {
   padding: 40px;
 }
@@ -159,7 +186,9 @@ article {
   -webkit-box-shadow: 0 10px 10px grey;
           box-shadow: 0 10px 10px grey;
 }
+/* END of Map Where I am */
 
+/* 2 sections not ready for now */
 .lorem-ipsum1 {
   background: rgba(0, 115, 204, 0.4);
   text-align: justify;
@@ -171,7 +200,9 @@ article {
   text-align: justify;
   padding: 40px;
 }
+/* END of 2 sections not ready for now */
 
+/* Instagram widget */
 .social-insta-content {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
@@ -222,8 +253,8 @@ article {
   border: white 1px solid;
 }
 
-/* Bypass block to hide the elfsight pub of widget */
 .blue-block {
+  /* Bypass block to hide the elfsight pub of widget */
   width: 120%;
   height: 50px;
   background: #005699;
@@ -232,6 +263,7 @@ article {
   z-index: 99999;
   border-bottom: white 1px solid;
 }
+/* END of Instagram widget */
 
 footer {
   margin-top: 0;

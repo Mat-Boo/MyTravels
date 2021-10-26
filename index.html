@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,500;0,800;1,100;1,200;1,500;1,800&display=swap" rel="stylesheet">
   <link rel="icon" href="ressources/favicon.ico" />
-  <title>My Travels</title>
+  <title>My Travels - Le blog voyage qui t'aide à préparer ta prochaine aventure</title>
 </head>
 <body>
   <!-- Main navbar -->
@@ -2597,18 +2597,18 @@
         <div class="modal-content search-modal">
           <div class="search-modal-content">
             <a href="" class="btn-close-search" data-bs-dismiss="modal" aria-label="Close">
-              <svg width="32" height="32" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+              <svg class="svg-btn-close-search" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
               <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
             </svg>
-          </a>
-          <div class="modal-body search-modal-body">
-            <form>
-              <div class="mb-3 d-flex flex-column">
-                <input class="form-control me-2 search-input" type="search" placeholder="Rechercher sur My Travels" aria-label="Search">
-                <button class="btn btn-search" type="submit">Rechercher</button>
-              </div>
-            </form>
-          </div>
+            </a>
+            <div class="modal-body search-modal-body">
+              <form>
+                <div class="d-flex flex-column align-items-center">
+                  <input class="form-control me-2 search-input" type="search" placeholder="Rechercher sur My Travels" aria-label="Search">
+                  <button class="btn btn-search" type="submit">Rechercher</button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -2677,6 +2677,7 @@
   </header>
     
   <main>
+    <!-- Introduction with logo, name and message -->
     <div class="intro d-flex flex-column align-items-center">
       <img src="ressources/svg/compass.svg" class="intro-logo" alt="logo">
       <h1 class="">My Travels</h1>
@@ -2685,15 +2686,17 @@
           Bienvenue sur My Travels, site consacré au voyage.</br>
           Moi c'est Mathieu et je partage ici mes aventures et te donne des conseils selon mon vécu.</br>
           Que ce soit pour partir en week-end ou en vacances, pour un voyage au long-court ou un tour 
-          du monde, tu trouveras toutes les infos qui te permettront, je l'espère, de faciliter ta future aventure.
+          du monde, tu trouveras toutes les infos qui te permettront, je l'espère, de faciliter ta prochaine aventure.
         </p>
       </div>
     </div>
+    <!-- END of Introduction with logo, name and message -->
 
-    <article class="container-fluid">
+    <!-- Last articles -->
+    <article class="container-fluid row justify-content-center">
       <h2 class="lastArticles-title row justify-content-center">Les derniers articles :</h2>
       <div class="lastArticles row row-cols-10 justify-content-center">
-        <div class="col-10 col-xl-4 d-flex justify-content-end">
+        <div class="left-side-articles col-10 col-xl-4 d-flex justify-content-end">
           <div class="bigCard card mb-2 mb-xl-0">
             <img src="ressources/photos/destinations/portugal/head-article-algarve.jpg" class="card-img-top" alt="card-algarve">
             <div class="card-body">
@@ -2711,7 +2714,7 @@
             </div>
           </div>
         </div>
-        <div class="col col-10 col-xl-3 d-flex flex-column justify-content-between">
+        <div class="middle-side-articles col col-10 col-xl-3 d-flex flex-column justify-content-between">
           <div class="smallCard card mb-2 mb-xl-0">
             <div class="row g-0">
               <div class="col-4 picture-background-smallCard1"></div>
@@ -2753,7 +2756,7 @@
             </div>
           </div>
         </div>
-        <div class="col-10 col-xl-3 d-flex flex-column justify-content-between">
+        <div class="right-side-articles col-10 col-xl-3 d-flex flex-column justify-content-between">
           <div class="smallCard card mb-2 mb-xl-0">
             <div class="row g-0">
               <div class="col-4 picture-background-smallCard3"></div>  
@@ -2780,7 +2783,7 @@
               <div class="col-8">
                 <div class="card-body">
                   <h5 class="card-title">Jordanie</h5>
-                  <p class="card-text">4x4, randonnée et nuit dans le <strong>désert de Wadi Rum</strong>.</p>
+                  <p class="card-text">4x4, rando et nuit dans le <strong>désert de Wadi Rum</strong>.</p>
                   <a href="#" class="discover-button">
                     Découvrir 
                     <svg width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 20 20">
@@ -2797,6 +2800,9 @@
         </div>
       </div>
     </article>
+    <!-- END of last articles -->
+
+    <!-- Map Where I am -->
     <div class="whereIAm">
       <p class="whereIAm-text">Je suis actuellement en <a href="destinations/france.html" class="whereIAm-link">FRANCE</a></p>
       <iframe 
@@ -2804,7 +2810,10 @@
         class="whereIAm-map" allowfullscreen="" loading="lazy">
       </iframe>
     </div>
-    <div class="lorem-ipsum1">
+    <!-- END of Map Where I am -->
+
+    <!-- 2 sections not ready for now -->
+    <section class="lorem-ipsum1">
       <div>  
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque gravida in fermentum et sollicitudin. Id eu nisl nunc mi ipsum faucibus vitae. Fermentum et sollicitudin ac orci phasellus egestas tellus rutrum. In dictum non consectetur a erat nam at lectus. Eu scelerisque felis imperdiet proin fermentum leo vel orci. Sagittis nisl rhoncus mattis rhoncus urna neque viverra. Massa tincidunt dui ut ornare lectus sit. Sapien et ligula ullamcorper malesuada proin libero nunc consequat interdum. Nisi vitae suscipit tellus mauris a diam. Dolor sit amet consectetur adipiscing elit ut. Ipsum dolor sit amet consectetur adipiscing elit. Id neque aliquam vestibulum morbi blandit cursus risus at. Bibendum at varius vel pharetra vel turpis nunc eget lorem. Fringilla est ullamcorper eget nulla facilisi etiam dignissim. Amet mattis vulputate enim nulla aliquet porttitor lacus luctus.
@@ -2831,8 +2840,8 @@
           Enim sed faucibus turpis in eu mi bibendum neque egestas. Sed adipiscing diam donec adipiscing tristique risus nec. Purus ut faucibus pulvinar elementum integer enim neque volutpat. Mi in nulla posuere sollicitudin aliquam. Enim ut tellus elementum sagittis vitae et leo. Semper viverra nam libero justo laoreet sit. Ornare lectus sit amet est placerat in. Nam aliquam sem et tortor consequat id porta. Massa tincidunt nunc pulvinar sapien et. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Est sit amet facilisis magna etiam tempor. Magnis dis parturient montes nascetur ridiculus mus mauris. Pretium aenean pharetra magna ac placerat vestibulum.
         </p>
       </div>
-    </div>
-    <div class="lorem-ipsum2">
+    </section>
+    <section class="lorem-ipsum2">
       <div>  
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque gravida in fermentum et sollicitudin. Id eu nisl nunc mi ipsum faucibus vitae. Fermentum et sollicitudin ac orci phasellus egestas tellus rutrum. In dictum non consectetur a erat nam at lectus. Eu scelerisque felis imperdiet proin fermentum leo vel orci. Sagittis nisl rhoncus mattis rhoncus urna neque viverra. Massa tincidunt dui ut ornare lectus sit. Sapien et ligula ullamcorper malesuada proin libero nunc consequat interdum. Nisi vitae suscipit tellus mauris a diam. Dolor sit amet consectetur adipiscing elit ut. Ipsum dolor sit amet consectetur adipiscing elit. Id neque aliquam vestibulum morbi blandit cursus risus at. Bibendum at varius vel pharetra vel turpis nunc eget lorem. Fringilla est ullamcorper eget nulla facilisi etiam dignissim. Amet mattis vulputate enim nulla aliquet porttitor lacus luctus.
@@ -2859,7 +2868,8 @@
           Enim sed faucibus turpis in eu mi bibendum neque egestas. Sed adipiscing diam donec adipiscing tristique risus nec. Purus ut faucibus pulvinar elementum integer enim neque volutpat. Mi in nulla posuere sollicitudin aliquam. Enim ut tellus elementum sagittis vitae et leo. Semper viverra nam libero justo laoreet sit. Ornare lectus sit amet est placerat in. Nam aliquam sem et tortor consequat id porta. Massa tincidunt nunc pulvinar sapien et. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Est sit amet facilisis magna etiam tempor. Magnis dis parturient montes nascetur ridiculus mus mauris. Pretium aenean pharetra magna ac placerat vestibulum.
         </p>
       </div>
-    </div>
+    </section>
+    <!-- END of 2 sections not ready for now -->
   </main>
 
   <!-- Instagram widget -->
@@ -2873,6 +2883,7 @@
   </div>
   <!-- End of Instagram widget -->
 
+  <!-- Footer -->
   <footer class="d-flex flex-column align-items-center">
     <p>© 2021 - créé par Mathieu de <b><a href="index.html" class="footer-mytravels-link">My Travels</a></b></p>
     <a href="mentions-legales.html" class="mentions">Mentions légales</a>
@@ -2895,6 +2906,8 @@
       </a>
     </div>
   </footer>
+  <!-- END of Footer -->
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
 </html>

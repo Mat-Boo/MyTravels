@@ -1,6 +1,7 @@
 $text-menu-color: #737373;
 $main-color: #0073cc;
-$font-menu: 'Cabin', sans-serif;
+$menu-font: 'Cabin', sans-serif;
+$main-font: 'Raleway', sans-serif;
 $body-color: rgb(245, 238, 225);
 
 body {
@@ -34,7 +35,6 @@ aside-left {
 
 main {
     grid-area: main;
-    font-family: 'Raleway', sans-serif;
 }
 
 aside-right {
@@ -47,14 +47,17 @@ aside-left, aside-right {
     justify-content: space-between;
     flex-wrap: nowrap;
     align-items: center;
-    font-family: 'Raleway', sans-serif;
 }
 
+main, aside-left, aside-right, footer {
+    font-family: $main-font
+}
+
+/* Footer */
 footer {
     grid-area: footer;
     background: darken($color: $main-color, $amount: 10);
     color: white;
-    font-family: 'Raleway', sans-serif;
     padding: 25px;
 }
 
@@ -91,10 +94,11 @@ footer {
     width: 25px;
     color: white;
 }
+/* END of Footer */
 
 /* Main navbar */
 .navbar {
-    font-family: $font-menu;
+    font-family: $menu-font;
     width: 100vw;
     padding: 0;
     z-index: 2;
@@ -105,7 +109,8 @@ footer {
     width: 25px;
 }
 
-.navbar > .container-fluid > .navbar-brand, .navbar > .container-fluid  .collapse > .navbar-nav > .nav-item .active {
+.navbar > .container-fluid > .navbar-brand, .navbar > .container-fluid  .collapse > .navbar-nav > 
+.nav-item .active {
  color: $main-color;
  font-weight: bold;
 }
@@ -156,7 +161,7 @@ footer {
 .continent-name-small {
     color: $main-color;
     margin-left: 20px;
-    font-family: $font-menu;
+
     font-weight: 400;
 }
 
@@ -295,7 +300,7 @@ footer {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 20px;
-    font-family: $font-menu;
+
     font-weight: 400;
 }
 
@@ -412,12 +417,6 @@ footer {
     }
 }
 
-/* @media screen and (max-width: 1099px) {
-    .countries-list {
-        grid-template-columns: repeat(4, 1fr);
-    }
-} */
-
 .flag {
     width: 30px;
     height: 20px;
@@ -472,7 +471,7 @@ footer {
         text-decoration: none;
         color: $main-color;
         margin-left: 20px;
-        font-family: $font-menu;
+
         font-weight: 400;
         width: 150px;
         padding-top: 5px;
@@ -480,6 +479,7 @@ footer {
     }
 }
 /* END of displayable block A PROPOS hover */
+/* END of Main navbar */
 
 /* Modal Window for CONTACT in A Propos Menu */
 .contact-modal {
@@ -531,17 +531,15 @@ footer {
 .search-input {
     width: 75vw;
     position: relative;
-    left: 12.5vw;
-    font-size: 2em;
+    font-size:calc(5px + 1.5vw); 
     margin-bottom: 25px;
 }
 
 .btn-search {
     width: 20%;
-    min-width: 200px;
+    min-width: 80px;
     position: relative;
-    left: 40%;
-    font-size: 2em;
+    font-size:calc(5px + 1.5vw); 
     background: $main-color;
     color: white;
     border: 1px solid $main-color;
@@ -551,6 +549,13 @@ footer {
         border: 1px solid $main-color;
     }
 }
+
+.svg-btn-close-search {
+    width: 2%;
+    min-width: 16px;
+    max-width: 32px;
+}
+
 /* END of Modal Window for SEARCH in Main-Menu */
 
 .discover-button {
