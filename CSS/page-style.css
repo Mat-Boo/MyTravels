@@ -20,8 +20,8 @@ h1 {
   position: absolute;
   top: 5%;
 }
-/* END of Picture of header with main title */
 
+/* END of Picture of header with main title */
 /* Article's card */
 .card {
   font-size: 1rem;
@@ -54,17 +54,12 @@ h5 {
 .discover-button:hover {
   border: 1px solid #0073cc;
 }
-/* END of Article's card */
 
+/* END of Article's card */
 @media screen and (max-width: 576px) {
   /* Déplace aside-left sous le header et aside-right au-dessus du footer pour les résolutions inférieures à 1200px*/
   body {
-        grid-template-areas: "nav nav nav nav nav"
- "header header header header header"
- "aside-left aside-left aside-left aside-left aside-left"
- "main main main main main"
- "aside-right aside-right aside-right aside-right aside-right"
- "footer footer footer footer footer";
+        grid-template-areas: "nav nav nav nav nav" "header header header header header" "aside-left aside-left aside-left aside-left aside-left" "main main main main main" "aside-right aside-right aside-right aside-right aside-right" "footer footer footer footer footer";
   }
   aside-left, aside-right {
     display: -webkit-box;

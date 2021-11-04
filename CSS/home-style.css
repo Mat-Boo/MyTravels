@@ -90,25 +90,25 @@ article {
 }
 
 .picture-background-smallCard1 {
-  background: url("../ressources/photos/destinations/jordanie/card-jerash.jpg");
+  background: url("../ressources/photos/destinations/portugal/card-algarve.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .picture-background-smallCard2 {
-  background: url("../ressources/photos/destinations/jordanie/card-dead-sea.jpg");
+  background: url("../ressources/photos/destinations/jordanie/card-jerash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .picture-background-smallCard3 {
-  background: url("../ressources/photos/destinations/jordanie/card-petra.jpg");
+  background: url("../ressources/photos/destinations/jordanie/card-dead-sea.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .picture-background-smallCard4 {
-  background: url("../ressources/photos/destinations/jordanie/card-wadirum.jpg");
+  background: url("../ressources/photos/destinations/jordanie/card-petra.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
